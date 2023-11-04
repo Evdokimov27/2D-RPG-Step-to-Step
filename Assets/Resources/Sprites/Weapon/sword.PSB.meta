@@ -1,0 +1,933 @@
+fileFormatVersion: 2
+guid: 208de692f177d8e448388ed3902f5dd8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: SlaveSword [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 596
+      width: 58
+      height: 172
+    spriteID: 598df7c2db261d146a2be14b4ecd094c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 517, y: 596}
+    spritePosition: {x: 20, y: 26}
+  - name: ShortIronKatana [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 481
+      width: 70
+      height: 216
+    spriteID: 775e7e48903f23b428777998dbc1a73e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 291, y: 481}
+    spritePosition: {x: 26, y: 3}
+  - name: ShadowSword
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 371
+      y: 492
+      width: 51
+      height: 264
+    spriteID: 44705c5b2d661ba4dad7ef5a5138e7b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 371, y: 492}
+    spritePosition: {x: 22, y: 4}
+  - name: SamuraiSword3 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 4
+      width: 75
+      height: 267
+    spriteID: 62661d0f37579e042b783cc4941b0555
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 109, y: 4}
+    spritePosition: {x: 2, y: 0}
+  - name: SamuraiSword2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 279
+      width: 75
+      height: 267
+    spriteID: e830b3dd0c59e764c8956c6ab089cc7b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 109, y: 279}
+    spritePosition: {x: 2, y: 0}
+  - name: SamuraiElderSword
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 510
+      width: 81
+      height: 266
+    spriteID: e5cb78c95eca91844b4743ffe949f6f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 510}
+    spritePosition: {x: 8, y: 4}
+  - name: RustySword
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 827
+      width: 61
+      height: 193
+    spriteID: 8388fcf3b2826fc48a254a23411007d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 109, y: 827}
+    spritePosition: {x: 18, y: 16}
+  - name: Morgana
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 472
+      width: 80
+      height: 212
+    spriteID: 1a55c61f08bb9394a996f94a38797b1e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 192, y: 472}
+    spritePosition: {x: 9, y: 12}
+  - name: MercenarySword2 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 225
+      width: 80
+      height: 239
+    spriteID: 2c52a956ae944f145abf05c2a12f91fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 192, y: 225}
+    spritePosition: {x: 8, y: 25}
+  - name: ManticoreSword
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 371
+      y: 4
+      width: 66
+      height: 207
+    spriteID: fe280e5fc509f694f8ec1eb60c5d43dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 371, y: 4}
+    spritePosition: {x: 17, y: 21}
+  - name: Machete [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 408
+      width: 58
+      height: 180
+    spriteID: eef6eefc98d81fb47b606dd62b02e08a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 517, y: 408}
+    spritePosition: {x: 35, y: 24}
+  - name: KnightSword [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 705
+      width: 71
+      height: 210
+    spriteID: c201b419a7982624ba09692737544d8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 291, y: 705}
+    spritePosition: {x: 13, y: 16}
+  - name: InquisitorSword4 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 97
+      height: 245
+    spriteID: 2c98492eb7f27f740bcc1cf315871b5b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 15}
+  - name: InquisitorSword3 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 257
+      width: 97
+      height: 245
+    spriteID: 74071474b6bc5d84eabe083e77acc306
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 257}
+    spritePosition: {x: 0, y: 15}
+  - name: InquisitorSword2 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 784
+      width: 91
+      height: 217
+    spriteID: 2d4b75bec0103ba4baf9837e58a9466c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 784}
+    spritePosition: {x: 3, y: 15}
+  - name: InquisitorSword1 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 4
+      width: 91
+      height: 213
+    spriteID: f2a3be44b8d8629408a832967a5abbbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 192, y: 4}
+    spritePosition: {x: 3, y: 15}
+  - name: GuardSword1 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 192
+      y: 692
+      width: 80
+      height: 206
+    spriteID: 3208c15bd6c496344a7668ffe0dd4057
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 192, y: 692}
+    spritePosition: {x: 10, y: 20}
+  - name: FireWarriorSword1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 233
+      width: 64
+      height: 240
+    spriteID: 237d8fcb8503f1d47a2a3114f801c815
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 291, y: 233}
+    spritePosition: {x: 17, y: 9}
+  - name: FamilySword
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 4
+      width: 68
+      height: 194
+    spriteID: 9dfc242fcc6648442a31b7c49618c849
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 517, y: 4}
+    spritePosition: {x: 14, y: 16}
+  - name: DarkSword
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 371
+      y: 219
+      width: 51
+      height: 265
+    spriteID: 153fb8486296960409c6e105b1366a3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 371, y: 219}
+    spritePosition: {x: 22, y: 4}
+  - name: Bilbo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 291
+      y: 4
+      width: 72
+      height: 221
+    spriteID: f2e5191239139cd429dd0a987594a0ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 291, y: 4}
+    spritePosition: {x: 14, y: 10}
+  - name: TrainingSword [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 206
+      width: 68
+      height: 194
+    spriteID: 81933bec79d4ed248bdb059d69f7e13d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 517, y: 206}
+    spritePosition: {x: 14, y: 16}
+  - name: SunriseSword
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 109
+      y: 554
+      width: 71
+      height: 265
+    spriteID: feef0434ee844304bbfd8c4608011470
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 109, y: 554}
+    spritePosition: {x: 12, y: 4}
+  - name: Stoccata
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 371
+      y: 764
+      width: 64
+      height: 210
+    spriteID: 420e05d243165ed478c9995486f4b2cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 371, y: 764}
+    spritePosition: {x: 17, y: 9}
+  - name: Smallsword
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 445
+      y: 4
+      width: 64
+      height: 209
+    spriteID: 52fe343fdf638ac47889b538e40b91ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 445, y: 4}
+    spritePosition: {x: 19, y: 16}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: SlaveSword [Paint]
+    spriteName: SlaveSword [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 598df7c2db261d146a2be14b4ecd094c
+    layerID: 54
+    mosaicPosition: {x: 517, y: 596}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ShortIronKatana [Paint]
+    spriteName: ShortIronKatana [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 775e7e48903f23b428777998dbc1a73e
+    layerID: 53
+    mosaicPosition: {x: 291, y: 481}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ShadowSword
+    spriteName: ShadowSword
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 44705c5b2d661ba4dad7ef5a5138e7b6
+    layerID: 52
+    mosaicPosition: {x: 371, y: 492}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SamuraiSword3 [Paint]
+    spriteName: SamuraiSword3 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 62661d0f37579e042b783cc4941b0555
+    layerID: 51
+    mosaicPosition: {x: 109, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SamuraiSword2
+    spriteName: SamuraiSword2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e830b3dd0c59e764c8956c6ab089cc7b
+    layerID: 50
+    mosaicPosition: {x: 109, y: 279}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SamuraiElderSword
+    spriteName: SamuraiElderSword
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e5cb78c95eca91844b4743ffe949f6f7
+    layerID: 49
+    mosaicPosition: {x: 4, y: 510}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RustySword
+    spriteName: RustySword
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8388fcf3b2826fc48a254a23411007d4
+    layerID: 48
+    mosaicPosition: {x: 109, y: 827}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Morgana
+    spriteName: Morgana
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1a55c61f08bb9394a996f94a38797b1e
+    layerID: 47
+    mosaicPosition: {x: 192, y: 472}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MercenarySword2 [Paint]
+    spriteName: MercenarySword2 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2c52a956ae944f145abf05c2a12f91fe
+    layerID: 46
+    mosaicPosition: {x: 192, y: 225}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ManticoreSword
+    spriteName: ManticoreSword
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fe280e5fc509f694f8ec1eb60c5d43dd
+    layerID: 45
+    mosaicPosition: {x: 371, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Machete [Paint]
+    spriteName: Machete [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eef6eefc98d81fb47b606dd62b02e08a
+    layerID: 44
+    mosaicPosition: {x: 517, y: 408}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: KnightSword [Paint]
+    spriteName: KnightSword [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c201b419a7982624ba09692737544d8e
+    layerID: 43
+    mosaicPosition: {x: 291, y: 705}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: InquisitorSword4 [Paint]
+    spriteName: InquisitorSword4 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2c98492eb7f27f740bcc1cf315871b5b
+    layerID: 42
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: InquisitorSword3 [Paint]
+    spriteName: InquisitorSword3 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 74071474b6bc5d84eabe083e77acc306
+    layerID: 41
+    mosaicPosition: {x: 4, y: 257}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: InquisitorSword2 [Paint]
+    spriteName: InquisitorSword2 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2d4b75bec0103ba4baf9837e58a9466c
+    layerID: 40
+    mosaicPosition: {x: 4, y: 784}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: InquisitorSword1 [Paint]
+    spriteName: InquisitorSword1 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f2a3be44b8d8629408a832967a5abbbd
+    layerID: 39
+    mosaicPosition: {x: 192, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GuardSword1 [Paint]
+    spriteName: GuardSword1 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3208c15bd6c496344a7668ffe0dd4057
+    layerID: 38
+    mosaicPosition: {x: 192, y: 692}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: FireWarriorSword1
+    spriteName: FireWarriorSword1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 237d8fcb8503f1d47a2a3114f801c815
+    layerID: 37
+    mosaicPosition: {x: 291, y: 233}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: FamilySword
+    spriteName: FamilySword
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9dfc242fcc6648442a31b7c49618c849
+    layerID: 36
+    mosaicPosition: {x: 517, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DarkSword
+    spriteName: DarkSword
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 153fb8486296960409c6e105b1366a3b
+    layerID: 35
+    mosaicPosition: {x: 371, y: 219}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Bilbo
+    spriteName: Bilbo
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f2e5191239139cd429dd0a987594a0ad
+    layerID: 34
+    mosaicPosition: {x: 291, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TrainingSword [Paint]
+    spriteName: TrainingSword [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 81933bec79d4ed248bdb059d69f7e13d
+    layerID: 33
+    mosaicPosition: {x: 517, y: 206}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SunriseSword
+    spriteName: SunriseSword
+    isGroup: 0
+    parentIndex: -1
+    spriteID: feef0434ee844304bbfd8c4608011470
+    layerID: 32
+    mosaicPosition: {x: 109, y: 554}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Stoccata
+    spriteName: Stoccata
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 420e05d243165ed478c9995486f4b2cb
+    layerID: 31
+    mosaicPosition: {x: 371, y: 764}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Smallsword
+    spriteName: Smallsword
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 52fe343fdf638ac47889b538e40b91ee
+    layerID: 30
+    mosaicPosition: {x: 445, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

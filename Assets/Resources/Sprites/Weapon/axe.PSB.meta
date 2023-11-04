@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: 3e600a3a20cc5d24b9aefee0cdf9995a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: BronzePickaxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 4
+      width: 129
+      height: 196
+    spriteID: 182ffa0b4933cc6499a934bdc8bba3d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 488, y: 4}
+    spritePosition: {x: 18, y: 25}
+  - name: BrassPickaxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 708
+      width: 139
+      height: 220
+    spriteID: 92be4fdd6c4b0df4daaa66853cad9067
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 708}
+    spritePosition: {x: 13, y: 18}
+  - name: BerserkAxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 177
+      y: 446
+      width: 139
+      height: 208
+    spriteID: 3493db15a4312ab4380824ec112a979b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 177, y: 446}
+    spritePosition: {x: 14, y: 13}
+  - name: WoodcutterPoleaxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 412
+      width: 96
+      height: 230
+    spriteID: c82826e45793ca34dbe3464a1ebea3f5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 488, y: 412}
+    spritePosition: {x: 47, y: 7}
+  - name: WoodcutterAxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 356
+      y: 399
+      width: 80
+      height: 148
+    spriteID: 965745a66332f96409572bbe68eeb973
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 356, y: 399}
+    spritePosition: {x: 63, y: 27}
+  - name: StoneAxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 863
+      width: 98
+      height: 147
+    spriteID: b8acd39e00c16324f83acf959c597f01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 488, y: 863}
+    spritePosition: {x: 42, y: 26}
+  - name: SteelPickaxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 165
+      height: 229
+    spriteID: 43f690fdfbeb0ba409b449155f5ac143
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 19}
+  - name: SteelAxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 177
+      y: 662
+      width: 124
+      height: 205
+    spriteID: e770ff0f334582e44a5ff254822bcb56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 177, y: 662}
+    spritePosition: {x: 23, y: 12}
+  - name: SmallAxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 177
+      y: 875
+      width: 79
+      height: 142
+    spriteID: 7322bc3699ab10546b8ff71c8234e72b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 177, y: 875}
+    spritePosition: {x: 62, y: 32}
+  - name: Scythe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 177
+      y: 4
+      width: 171
+      height: 219
+    spriteID: dbff53446cd6333488944073c8bdf0e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 177, y: 4}
+    spritePosition: {x: 7, y: 0}
+  - name: RustedPickaxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 208
+      width: 129
+      height: 196
+    spriteID: 6e60722d8f7cde548820154a96c334ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 488, y: 208}
+    spritePosition: {x: 18, y: 25}
+  - name: RunicAxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 488
+      y: 650
+      width: 105
+      height: 205
+    spriteID: 38b21065d328fcb439128787488e840a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 488, y: 650}
+    spritePosition: {x: 47, y: 21}
+  - name: OldPoleaxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 356
+      y: 4
+      width: 124
+      height: 205
+    spriteID: 5a62ad3cb9e56ad42a2183dd3a6cd743
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 356, y: 4}
+    spritePosition: {x: 23, y: 12}
+  - name: IronPickaxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 177
+      y: 231
+      width: 140
+      height: 207
+    spriteID: accc3cf8d3092164e9aec3be1d0b61cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 177, y: 231}
+    spritePosition: {x: 12, y: 22}
+  - name: DreadCleaver
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 356
+      y: 217
+      width: 87
+      height: 174
+    spriteID: d73f7ce72e03a4e4994c10e94a316491
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 356, y: 217}
+    spritePosition: {x: 53, y: 31}
+  - name: DestroyerAxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 241
+      width: 131
+      height: 243
+    spriteID: 15a31e379cbf79f4089b6aeb9a7fd8f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 241}
+    spritePosition: {x: 19, y: 4}
+  - name: CopperPickaxe
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 492
+      width: 152
+      height: 208
+    spriteID: 1368ead3d20306147a20d6f43c27e44e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 492}
+    spritePosition: {x: 5, y: 18}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: BronzePickaxe
+    spriteName: BronzePickaxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 182ffa0b4933cc6499a934bdc8bba3d0
+    layerID: 38
+    mosaicPosition: {x: 488, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BrassPickaxe
+    spriteName: BrassPickaxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 92be4fdd6c4b0df4daaa66853cad9067
+    layerID: 37
+    mosaicPosition: {x: 4, y: 708}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BerserkAxe
+    spriteName: BerserkAxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3493db15a4312ab4380824ec112a979b
+    layerID: 36
+    mosaicPosition: {x: 177, y: 446}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WoodcutterPoleaxe
+    spriteName: WoodcutterPoleaxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c82826e45793ca34dbe3464a1ebea3f5
+    layerID: 35
+    mosaicPosition: {x: 488, y: 412}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WoodcutterAxe
+    spriteName: WoodcutterAxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 965745a66332f96409572bbe68eeb973
+    layerID: 34
+    mosaicPosition: {x: 356, y: 399}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: StoneAxe
+    spriteName: StoneAxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b8acd39e00c16324f83acf959c597f01
+    layerID: 33
+    mosaicPosition: {x: 488, y: 863}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SteelPickaxe
+    spriteName: SteelPickaxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 43f690fdfbeb0ba409b449155f5ac143
+    layerID: 32
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SteelAxe
+    spriteName: SteelAxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e770ff0f334582e44a5ff254822bcb56
+    layerID: 31
+    mosaicPosition: {x: 177, y: 662}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SmallAxe
+    spriteName: SmallAxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7322bc3699ab10546b8ff71c8234e72b
+    layerID: 30
+    mosaicPosition: {x: 177, y: 875}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Scythe
+    spriteName: Scythe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dbff53446cd6333488944073c8bdf0e4
+    layerID: 29
+    mosaicPosition: {x: 177, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RustedPickaxe
+    spriteName: RustedPickaxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6e60722d8f7cde548820154a96c334ca
+    layerID: 28
+    mosaicPosition: {x: 488, y: 208}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RunicAxe
+    spriteName: RunicAxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 38b21065d328fcb439128787488e840a
+    layerID: 27
+    mosaicPosition: {x: 488, y: 650}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: OldPoleaxe
+    spriteName: OldPoleaxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5a62ad3cb9e56ad42a2183dd3a6cd743
+    layerID: 26
+    mosaicPosition: {x: 356, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: IronPickaxe
+    spriteName: IronPickaxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: accc3cf8d3092164e9aec3be1d0b61cc
+    layerID: 25
+    mosaicPosition: {x: 177, y: 231}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DreadCleaver
+    spriteName: DreadCleaver
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d73f7ce72e03a4e4994c10e94a316491
+    layerID: 24
+    mosaicPosition: {x: 356, y: 217}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DestroyerAxe
+    spriteName: DestroyerAxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 15a31e379cbf79f4089b6aeb9a7fd8f6
+    layerID: 23
+    mosaicPosition: {x: 4, y: 241}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CopperPickaxe
+    spriteName: CopperPickaxe
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1368ead3d20306147a20d6f43c27e44e
+    layerID: 22
+    mosaicPosition: {x: 4, y: 492}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

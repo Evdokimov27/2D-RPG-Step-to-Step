@@ -1,0 +1,613 @@
+fileFormatVersion: 2
+guid: f14d1fbef5029694693a0a02413066bb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: BlacksmithHammer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 297
+      y: 176
+      width: 75
+      height: 159
+    spriteID: 34a0763eff1b20949848757e1da8d6ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 297, y: 176}
+    spritePosition: {x: 18, y: 40}
+  - name: BlackHammer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 4
+      width: 109
+      height: 212
+    spriteID: b7ea179ec68dbc8418b99c0ef2a242f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 119, y: 4}
+    spritePosition: {x: 0, y: 8}
+  - name: WoodenSpikedClub
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 297
+      y: 505
+      width: 57
+      height: 197
+    spriteID: d27572f4e5316ff4994ed8762eb0dbf5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 297, y: 505}
+    spritePosition: {x: 27, y: 31}
+  - name: WoodenMace
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 409
+      width: 89
+      height: 178
+    spriteID: 07c9bdab41377c546854fc1ef5a0238f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 119, y: 409}
+    spritePosition: {x: 11, y: 30}
+  - name: WoodenClub
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 595
+      width: 83
+      height: 171
+    spriteID: e49839e2a3a15b646b1805e191176aa7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 119, y: 595}
+    spritePosition: {x: 17, y: 38}
+  - name: WarHammer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 297
+      y: 4
+      width: 82
+      height: 164
+    spriteID: 23c4a1d7ef22ba449917f6e4c8a40be4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 297, y: 4}
+    spritePosition: {x: 14, y: 18}
+  - name: WarClub
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 236
+      y: 4
+      width: 53
+      height: 267
+    spriteID: 7b0ecd17fb65fd44bab3f5f1ff761f27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 236, y: 4}
+    spritePosition: {x: 29, y: 0}
+  - name: TitanHammer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 232
+      width: 103
+      height: 225
+    spriteID: 0a87e8cef797e8f40a62142420f76414
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 232}
+    spritePosition: {x: 4, y: 9}
+  - name: RustedHammer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 297
+      y: 343
+      width: 75
+      height: 154
+    spriteID: 95a3de77107e08243ab4f1bf9eb24c15
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 297, y: 343}
+    spritePosition: {x: 17, y: 38}
+  - name: Morgenstern
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 683
+      width: 95
+      height: 208
+    spriteID: a1aa4ea39edcea24ebad4336677e83c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 683}
+    spritePosition: {x: 8, y: 15}
+  - name: LongHammer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 465
+      width: 100
+      height: 210
+    spriteID: d8b4b78973a10414288d55e59d7ded18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 465}
+    spritePosition: {x: 5, y: 22}
+  - name: IronHammer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 224
+      width: 95
+      height: 177
+    spriteID: 015e872b208ec5a4b9d14747b5b0088c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 119, y: 224}
+    spritePosition: {x: 4, y: 25}
+  - name: GateCrusher
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 107
+      height: 220
+    spriteID: 75b704abeec9a9b4eacb62e51b4fdb33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 2, y: 17}
+  - name: DarkStoneHammer
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 119
+      y: 774
+      width: 81
+      height: 175
+    spriteID: 2811024fb40893b488cb943a3aaf5fc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 119, y: 774}
+    spritePosition: {x: 15, y: 35}
+  - name: BoneClub
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 297
+      y: 710
+      width: 52
+      height: 166
+    spriteID: 43d097adb12119648b163b3f975daa1b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 297, y: 710}
+    spritePosition: {x: 30, y: 23}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: BlacksmithHammer
+    spriteName: BlacksmithHammer
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 34a0763eff1b20949848757e1da8d6ce
+    layerID: 34
+    mosaicPosition: {x: 297, y: 176}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BlackHammer
+    spriteName: BlackHammer
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b7ea179ec68dbc8418b99c0ef2a242f3
+    layerID: 33
+    mosaicPosition: {x: 119, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WoodenSpikedClub
+    spriteName: WoodenSpikedClub
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d27572f4e5316ff4994ed8762eb0dbf5
+    layerID: 32
+    mosaicPosition: {x: 297, y: 505}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WoodenMace
+    spriteName: WoodenMace
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 07c9bdab41377c546854fc1ef5a0238f
+    layerID: 31
+    mosaicPosition: {x: 119, y: 409}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WoodenClub
+    spriteName: WoodenClub
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e49839e2a3a15b646b1805e191176aa7
+    layerID: 30
+    mosaicPosition: {x: 119, y: 595}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WarHammer
+    spriteName: WarHammer
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23c4a1d7ef22ba449917f6e4c8a40be4
+    layerID: 29
+    mosaicPosition: {x: 297, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WarClub
+    spriteName: WarClub
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7b0ecd17fb65fd44bab3f5f1ff761f27
+    layerID: 28
+    mosaicPosition: {x: 236, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: TitanHammer
+    spriteName: TitanHammer
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0a87e8cef797e8f40a62142420f76414
+    layerID: 27
+    mosaicPosition: {x: 4, y: 232}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RustedHammer
+    spriteName: RustedHammer
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 95a3de77107e08243ab4f1bf9eb24c15
+    layerID: 26
+    mosaicPosition: {x: 297, y: 343}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Morgenstern
+    spriteName: Morgenstern
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a1aa4ea39edcea24ebad4336677e83c3
+    layerID: 25
+    mosaicPosition: {x: 4, y: 683}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LongHammer
+    spriteName: LongHammer
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d8b4b78973a10414288d55e59d7ded18
+    layerID: 24
+    mosaicPosition: {x: 4, y: 465}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: IronHammer
+    spriteName: IronHammer
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 015e872b208ec5a4b9d14747b5b0088c
+    layerID: 23
+    mosaicPosition: {x: 119, y: 224}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GateCrusher
+    spriteName: GateCrusher
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 75b704abeec9a9b4eacb62e51b4fdb33
+    layerID: 22
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DarkStoneHammer
+    spriteName: DarkStoneHammer
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2811024fb40893b488cb943a3aaf5fc6
+    layerID: 21
+    mosaicPosition: {x: 119, y: 774}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BoneClub
+    spriteName: BoneClub
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 43d097adb12119648b163b3f975daa1b
+    layerID: 20
+    mosaicPosition: {x: 297, y: 710}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

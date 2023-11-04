@@ -1,0 +1,3237 @@
+fileFormatVersion: 2
+guid: 33c48e5baab563a4b9b7fa900826b682
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: WitchHunterHat [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1146
+      y: 4
+      width: 219
+      height: 126
+    spriteID: c102c8c856339d146b66efc8aa4e47ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1146, y: 4}
+    spritePosition: {x: 42, y: 136}
+  - name: WitchHat [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 4
+      width: 272
+      height: 216
+    spriteID: 25e07b9b73621d54696769c85e3e6293
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 4}
+    spritePosition: {x: 30, y: 118}
+  - name: WaterWizardHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1226
+      width: 179
+      height: 172
+    spriteID: f11ab1f25ea3f284c9b5fd5486b1431f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 1226}
+    spritePosition: {x: 66, y: 69}
+  - name: WarlockHood
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 1698
+      width: 156
+      height: 177
+    spriteID: 82f75f3d874fe3449b0072f7bf7f6c79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 1698}
+    spritePosition: {x: 83, y: 70}
+  - name: VisorKnightHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 703
+      width: 159
+      height: 172
+    spriteID: fcb1fc3db5a0479408b3691ee68145ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 703}
+    spritePosition: {x: 78, y: 71}
+  - name: ThiefHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 318
+      width: 173
+      height: 161
+    spriteID: e29956bd5bf5a53489d2f0ec2b4cb606
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 318}
+    spritePosition: {x: 69, y: 80}
+  - name: StrawHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1599
+      y: 4
+      width: 232
+      height: 110
+    spriteID: 4c2651204da7e024b86cae5af4f1ce5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1599, y: 4}
+    spritePosition: {x: 43, y: 144}
+  - name: SteelPotHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1899
+      y: 1884
+      width: 144
+      height: 113
+    spriteID: 6f0cb4f068af78145b856e7cb221c072
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1899, y: 1884}
+    spritePosition: {x: 89, y: 126}
+  - name: SteelHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1898
+      y: 1174
+      width: 144
+      height: 129
+    spriteID: 3d79419394d98424e999cbd7b0ab8f19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1898, y: 1174}
+    spritePosition: {x: 89, y: 112}
+  - name: SpearmanHelm2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 1890
+      width: 157
+      height: 153
+    spriteID: fdb504bd1d2be4d40bbea978f93ac006
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 1890}
+    spritePosition: {x: 78, y: 83}
+  - name: SpearmanHelm1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 1912
+      width: 159
+      height: 122
+    spriteID: cb3c5529172df364799d67c5c119b075
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 1912}
+    spritePosition: {x: 81, y: 121}
+  - name: SnperHood
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 487
+      width: 173
+      height: 161
+    spriteID: 9c82957d222cc7b4aad979bca05eb432
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 487}
+    spritePosition: {x: 69, y: 80}
+  - name: SlaveHeadband [FullHair]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1996
+      width: 156
+      height: 22
+    spriteID: 30a9bbd1c025ae7418ad92aff804a0c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1996}
+    spritePosition: {x: 84, y: 144}
+  - name: SiegeArcherHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 1518
+      width: 161
+      height: 172
+    spriteID: 2c5c8c9f4d3061746a8cbc682769100d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 1518}
+    spritePosition: {x: 79, y: 86}
+  - name: ShamanHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1839
+      y: 4
+      width: 172
+      height: 131
+    spriteID: 23fef74da59fc6b488a88d671ba46ef5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1839, y: 4}
+    spritePosition: {x: 69, y: 147}
+  - name: ScoutHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 151
+      width: 165
+      height: 159
+    spriteID: 4b92f117649083d42ad31f66b632fbaf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 151}
+    spritePosition: {x: 77, y: 80}
+  - name: RoyalArcherHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 4
+      width: 300
+      height: 139
+    spriteID: c89befcdf94944648b389bea57703835
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 4}
+    spritePosition: {x: 0, y: 155}
+  - name: RangerHat [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 4
+      width: 282
+      height: 169
+    spriteID: 2f57327c453a8aa448a5a0762ef1ee8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 4}
+    spritePosition: {x: 17, y: 141}
+  - name: PeasantCap
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1892
+      y: 501
+      width: 146
+      height: 147
+    spriteID: 1b8951f0f327b7649b38b556e9cce9ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1892, y: 501}
+    spritePosition: {x: 87, y: 88}
+  - name: PathfinderHood
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 716
+      width: 174
+      height: 246
+    spriteID: 1a48f4bc9ce182b4cbe70a57d60d619b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 716}
+    spritePosition: {x: 66, y: 0}
+  - name: PathfinderHat [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1316
+      width: 231
+      height: 91
+    spriteID: bf3ff6ef837a91c45bb1e97236437bf3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1316}
+    spritePosition: {x: 37, y: 161}
+  - name: PaladinHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 1457
+      width: 164
+      height: 175
+    spriteID: 47e91e673b825de4f9a693eb12fa7cd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 1457}
+    spritePosition: {x: 80, y: 82}
+  - name: NecromancerHood
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 656
+      width: 173
+      height: 161
+    spriteID: 4c91aaa674120304e9da49a0dc608281
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 656}
+    spritePosition: {x: 69, y: 80}
+  - name: MinerHelmet
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1772
+      width: 161
+      height: 104
+    spriteID: 4bbe5827c4a478840938b53280442cea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1772}
+    spritePosition: {x: 81, y: 133}
+  - name: MilitiamanHelmet2 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 977
+      width: 165
+      height: 146
+    spriteID: dc1cc40667c5eee43ac66d29d8714585
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 977}
+    spritePosition: {x: 77, y: 90}
+  - name: MilitiamanHelmet1 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 1729
+      width: 159
+      height: 153
+    spriteID: b7b0ff064b10c8a4daeac146939c3ac7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 1729}
+    spritePosition: {x: 81, y: 90}
+  - name: MercenaryHelm2 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 228
+      width: 224
+      height: 147
+    spriteID: 39a1c075f56939c41942735518dd8a02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 228}
+    spritePosition: {x: 49, y: 96}
+  - name: MercenaryHelm1 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1758
+      width: 179
+      height: 167
+    spriteID: 41f23720243795e47809859393dc95c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 1758}
+    spritePosition: {x: 71, y: 97}
+  - name: MasterDodgeHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 903
+      width: 172
+      height: 129
+    spriteID: 1607fc990b22efa40a6e9a5fdd325710
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 903}
+    spritePosition: {x: 70, y: 155}
+  - name: MarauderHood
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 812
+      width: 154
+      height: 157
+    spriteID: 71c436cd7cbf5b24c88da3b59bcef84e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 812}
+    spritePosition: {x: 82, y: 80}
+  - name: ManticoreHelmet
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 1567
+      width: 159
+      height: 154
+    spriteID: 1a0e2ff1862e15a488eb04358d39d15a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 1567}
+    spritePosition: {x: 78, y: 89}
+  - name: LeatherHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 1284
+      width: 162
+      height: 145
+    spriteID: 534df523744976c4a9e3fc8da1648155
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 1284}
+    spritePosition: {x: 76, y: 91}
+  - name: LeatherCap
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1415
+      width: 167
+      height: 125
+    spriteID: 57432b8c305573248a7d47b9143e27d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1415}
+    spritePosition: {x: 76, y: 127}
+  - name: LandsknechtHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 1747
+      width: 148
+      height: 157
+    spriteID: 358f5d30019675e48b588b71d23440e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 1747}
+    spritePosition: {x: 86, y: 76}
+  - name: KnightHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1424
+      width: 180
+      height: 196
+    spriteID: e518ad6266f58664d9ca5b1bebde2293
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1424}
+    spritePosition: {x: 57, y: 89}
+  - name: JesterHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1628
+      width: 191
+      height: 181
+    spriteID: ebb64b3407bd1e242aa945df5f85864d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1628}
+    spritePosition: {x: 57, y: 128}
+  - name: InquisitorHat2 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 582
+      width: 225
+      height: 143
+    spriteID: 169be70107e19d34781884a2a810d9d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 582}
+    spritePosition: {x: 20, y: 131}
+  - name: InquisitorHat1 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 733
+      width: 253
+      height: 125
+    spriteID: 38bc6db33a5bcda4680194d6dcd8fa2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 733}
+    spritePosition: {x: 34, y: 168}
+  - name: IceWizardHood
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 883
+      width: 158
+      height: 162
+    spriteID: 3c6bbba448ef26b49aedfb02edd7ff76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 883}
+    spritePosition: {x: 83, y: 79}
+  - name: HunterHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1048
+      width: 182
+      height: 170
+    spriteID: da2fa63a0f54cb54095df1c6fcf395c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 1048}
+    spritePosition: {x: 68, y: 73}
+  - name: HunterHat2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1040
+      width: 173
+      height: 126
+    spriteID: 47c6337b41ecfd54aa6625454454072e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1040}
+    spritePosition: {x: 74, y: 142}
+  - name: HunterHat1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 385
+      width: 213
+      height: 108
+    spriteID: c54ab04fd0e3cb44ab3c362106686ce7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 385}
+    spritePosition: {x: 61, y: 154}
+  - name: HunterHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 970
+      width: 232
+      height: 177
+    spriteID: e0cfc1ba07de51948bb3c625f395d5c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 970}
+    spritePosition: {x: 22, y: 150}
+  - name: HermitHood [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 825
+      width: 173
+      height: 161
+    spriteID: 09c976f4d5c6fb14aa3d4eadec2135fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 825}
+    spritePosition: {x: 69, y: 80}
+  - name: HermitHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 151
+      width: 232
+      height: 110
+    spriteID: 0a03c1e4b4b1a87419162607e8b55b66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 151}
+    spritePosition: {x: 43, y: 144}
+  - name: HeavyHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 383
+      width: 172
+      height: 191
+    spriteID: 5507b351e089fcc47b59439da9b95982
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 383}
+    spritePosition: {x: 77, y: 104}
+  - name: HawkHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 1883
+      width: 172
+      height: 159
+    spriteID: ffeea95b632b59c4095c8410bea275b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 1883}
+    spritePosition: {x: 63, y: 88}
+  - name: HalfmoonHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1817
+      width: 226
+      height: 148
+    spriteID: 5b544f9f883216a448a027cbd201a10e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1817}
+    spritePosition: {x: 44, y: 130}
+  - name: HalberdierHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 1092
+      width: 161
+      height: 180
+    spriteID: 7687f368a88e673479836b570414b549
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 1092}
+    spritePosition: {x: 79, y: 132}
+  - name: GypsyHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1933
+      width: 243
+      height: 108
+    spriteID: 241ce931d83135846a4d1d9527cee9ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 1933}
+    spritePosition: {x: 7, y: 118}
+  - name: GuardHelm3 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 647
+      width: 162
+      height: 157
+    spriteID: a9b098e9ed2de664880d21788075a808
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 647}
+    spritePosition: {x: 77, y: 79}
+  - name: GuardHelm2 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 318
+      width: 165
+      height: 157
+    spriteID: f0914540e5414014aa3ff852b3d5812b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 318}
+    spritePosition: {x: 77, y: 79}
+  - name: GuardHelm1 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 483
+      width: 165
+      height: 156
+    spriteID: 08eefc4cd4afdf345844a63d55a7989a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 483}
+    spritePosition: {x: 77, y: 80}
+  - name: GladiatorHelm2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 335
+      width: 161
+      height: 175
+    spriteID: 3e4cb22ac10c2eb48afc5e9340b6ec93
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 335}
+    spritePosition: {x: 79, y: 83}
+  - name: GladiatorHelm1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 151
+      width: 161
+      height: 176
+    spriteID: 6625cb8e89f7e5f42b87cb427d557984
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 151}
+    spritePosition: {x: 79, y: 82}
+  - name: FireWizardHood
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 181
+      width: 173
+      height: 172
+    spriteID: 396204d33c8276e418b853abfe6555a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 181}
+    spritePosition: {x: 69, y: 69}
+  - name: FireAdeptHood
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 361
+      width: 173
+      height: 172
+    spriteID: 7a4f7835a7e123b44bd8dbc6955394ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 361}
+    spritePosition: {x: 69, y: 69}
+  - name: ExpertHunterHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 269
+      width: 214
+      height: 108
+    spriteID: 79ff3923a8681214a91e4e043e492e80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 269}
+    spritePosition: {x: 60, y: 154}
+  - name: ExpertBowmanHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 1817
+      width: 218
+      height: 131
+    spriteID: b8f143e1e6d8a7e4f8abac6ab470b628
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 1817}
+    spritePosition: {x: 46, y: 154}
+  - name: EnforcedHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 1223
+      width: 144
+      height: 174
+    spriteID: a89a93236069b934b9565b0767e2e70d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 1223}
+    spritePosition: {x: 89, y: 68}
+  - name: DwellerHood [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1406
+      width: 157
+      height: 196
+    spriteID: 90755117a885614458a509b57b6b1c0f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 1406}
+    spritePosition: {x: 81, y: 67}
+  - name: DruidHat [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1365
+      y: 471
+      width: 156
+      height: 101
+    spriteID: db9b566a8a536d94ca82696f6e125bd4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1365, y: 471}
+    spritePosition: {x: 83, y: 144}
+  - name: DestroyerHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 526
+      width: 240
+      height: 182
+    spriteID: f19afe5cd3b2a9d41b8f9a9825c41e57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 526}
+    spritePosition: {x: 34, y: 69}
+  - name: DeserterBandage [FullHair]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1899
+      y: 1772
+      width: 144
+      height: 57
+    spriteID: 38e173fb3790e564b9c06c50f129232d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1899, y: 1772}
+    spritePosition: {x: 87, y: 143}
+  - name: ClericHood [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 994
+      width: 173
+      height: 161
+    spriteID: dbd9bf4170b2a2144a77c5b354a8c589
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 994}
+    spritePosition: {x: 69, y: 80}
+  - name: ChampionHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 1405
+      width: 161
+      height: 154
+    spriteID: 54c89afa18cfd2d4eb04dd56a5606c44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 1405}
+    spritePosition: {x: 79, y: 104}
+  - name: CataphractHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1155
+      width: 156
+      height: 261
+    spriteID: 926948fc117c59e47a67b9df8af832c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1155}
+    spritePosition: {x: 81, y: 61}
+  - name: CardinalHat [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 501
+      width: 154
+      height: 148
+    spriteID: 8aa6aaede40a86f4c95874979caa0aea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 501}
+    spritePosition: {x: 82, y: 155}
+  - name: BowmanHat [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1373
+      y: 4
+      width: 218
+      height: 120
+    spriteID: a6d4b6e2a1ff96245b170c09efe5135d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1373, y: 4}
+    spritePosition: {x: 46, y: 154}
+  - name: BlacksmithHeadband
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1541
+      y: 151
+      width: 181
+      height: 142
+    spriteID: 172e21c8687c6894fa89c1a4b2fd5585
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1541, y: 151}
+    spritePosition: {x: 53, y: 90}
+  - name: BishopHat [FullHair]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1919
+      y: 771
+      width: 121
+      height: 119
+    spriteID: 6b58d5d58849f944e9d6d956679fce41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1919, y: 771}
+    spritePosition: {x: 115, y: 186}
+  - name: BerserkHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 1610
+      width: 219
+      height: 140
+    spriteID: 37e531f652fae92489eefbf09ad58fca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 1610}
+    spritePosition: {x: 43, y: 108}
+  - name: AssassinHood [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 1053
+      width: 158
+      height: 162
+    spriteID: 3303deda2e3d85a459579cfc4ef224d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 1053}
+    spritePosition: {x: 83, y: 79}
+  - name: ArcherHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1884
+      width: 161
+      height: 104
+    spriteID: 3bc8ee62636781c4d98702c95f36f7df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1884}
+    spritePosition: {x: 80, y: 138}
+  - name: AmateurDodgeHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 771
+      width: 181
+      height: 124
+    spriteID: 6a3b9dfb4e7b35c449c5bcda77a0e998
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 771}
+    spritePosition: {x: 61, y: 155}
+  - name: AmateurDipperHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1658
+      width: 185
+      height: 106
+    spriteID: d7d0b209d8a458e4fa82e0c0070d8369
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1658}
+    spritePosition: {x: 47, y: 125}
+  - name: AgileHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1548
+      width: 198
+      height: 102
+    spriteID: 3f977fe5711c1214b85c22bf52808b92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1548}
+    spritePosition: {x: 53, y: 154}
+  - name: VikingIronHelm3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1365
+      y: 151
+      width: 168
+      height: 154
+    spriteID: 0d5ebe55d7e01d54d9004763a1871c0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1365, y: 151}
+    spritePosition: {x: 81, y: 137}
+  - name: VikingLeatherHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 1174
+      width: 160
+      height: 134
+    spriteID: 5501cbdb4b4091b419a48ce7056f0365
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 1174}
+    spritePosition: {x: 78, y: 124}
+  - name: MountainHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 541
+      width: 160
+      height: 183
+    spriteID: 2a435a41a2613cd45a794472c7bb4d79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 541}
+    spritePosition: {x: 77, y: 80}
+  - name: ShamanMask [FullHair]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 256
+      height: 284
+    spriteID: 0283e9acfaacd3949823a4be1fdf076c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 23, y: 61}
+  - name: ShamanMask3 [FullHair]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 296
+      width: 250
+      height: 222
+    spriteID: f1cf7eb6d6f03fe419cfec22ba189570
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 296}
+    spritePosition: {x: 35, y: 58}
+  - name: SandElderTurban
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 838
+      y: 518
+      width: 159
+      height: 177
+    spriteID: 4e51e45c9472e3e4ebac6654c37dc1d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 838, y: 518}
+    spritePosition: {x: 81, y: 133}
+  - name: SamuraiElderHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 866
+      width: 180
+      height: 174
+    spriteID: 1ce28c27c572cd240993d332a9372f46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 268, y: 866}
+    spritePosition: {x: 73, y: 90}
+  - name: NinjaHelm3 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 1640
+      width: 169
+      height: 169
+    spriteID: b58f3d6ce8b98b94b93620ca90914300
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 1640}
+    spritePosition: {x: 76, y: 79}
+  - name: NinjaHelm2 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 1280
+      width: 170
+      height: 169
+    spriteID: 93d7585cdafacb34ab41601b8e959a5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 1280}
+    spritePosition: {x: 75, y: 79}
+  - name: NinjaHelm1 [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 1347
+      width: 170
+      height: 163
+    spriteID: eb9056df603e3fb42a5718ba2290640d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 1347}
+    spritePosition: {x: 75, y: 85}
+  - name: SamuraiHelm3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 732
+      width: 170
+      height: 172
+    spriteID: ea33d02167e7b9645b5a4bba46bc13ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 732}
+    spritePosition: {x: 70, y: 92}
+  - name: SamuraiHelm2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 548
+      y: 912
+      width: 170
+      height: 172
+    spriteID: f284adf56ff65ce48a34b4d767e4904b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 548, y: 912}
+    spritePosition: {x: 70, y: 92}
+  - name: SamuraiHelm1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1541
+      y: 301
+      width: 170
+      height: 144
+    spriteID: 23238b047f6c4b1419c66daaf2cda86f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1541, y: 301}
+    spritePosition: {x: 70, y: 92}
+  - name: FalconIronHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 151
+      width: 177
+      height: 159
+    spriteID: a60ff4aa6ae55dc49bd45caca9667df3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 151}
+    spritePosition: {x: 56, y: 88}
+  - name: EliteKnightHelm
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1007
+      y: 1163
+      width: 158
+      height: 176
+    spriteID: 1b0ec62a0d2f96a4191c8d889e15cc08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1007, y: 1163}
+    spritePosition: {x: 78, y: 78}
+  - name: CrusaderHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 1131
+      width: 163
+      height: 145
+    spriteID: b031d8c8e27306044b3332ec8c3101e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 1131}
+    spritePosition: {x: 75, y: 91}
+  - name: WarriorHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 1589
+      width: 155
+      height: 150
+    spriteID: 136904a89d13d8847b5e0a569dd12233
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 1589}
+    spritePosition: {x: 82, y: 90}
+  - name: SharpHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1365
+      y: 313
+      width: 168
+      height: 150
+    spriteID: df1ff2f032d838c41b036da196ad2d87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1365, y: 313}
+    spritePosition: {x: 77, y: 124}
+  - name: GuardHelm [Paint]
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1192
+      y: 1437
+      width: 162
+      height: 144
+    spriteID: 21c2503e82e3a3a4390afc3ff10bd4b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1192, y: 1437}
+    spritePosition: {x: 77, y: 92}
+  - name: AdvancedDipperHat
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1730
+      y: 657
+      width: 213
+      height: 106
+    spriteID: 98241c8247d8f104987bfb3ec11a38b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1730, y: 657}
+    spritePosition: {x: 47, y: 125}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: WitchHunterHat [Paint]
+    spriteName: WitchHunterHat [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c102c8c856339d146b66efc8aa4e47ac
+    layerID: 198
+    mosaicPosition: {x: 1146, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WitchHat [Paint]
+    spriteName: WitchHat [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 25e07b9b73621d54696769c85e3e6293
+    layerID: 197
+    mosaicPosition: {x: 268, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WaterWizardHelm
+    spriteName: WaterWizardHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f11ab1f25ea3f284c9b5fd5486b1431f
+    layerID: 196
+    mosaicPosition: {x: 268, y: 1226}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WarlockHood
+    spriteName: WarlockHood
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 82f75f3d874fe3449b0072f7bf7f6c79
+    layerID: 195
+    mosaicPosition: {x: 1007, y: 1698}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: VisorKnightHelm [Paint]
+    spriteName: VisorKnightHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fcb1fc3db5a0479408b3691ee68145ec
+    layerID: 194
+    mosaicPosition: {x: 838, y: 703}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ThiefHelm [Paint]
+    spriteName: ThiefHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e29956bd5bf5a53489d2f0ec2b4cb606
+    layerID: 193
+    mosaicPosition: {x: 1007, y: 318}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: StrawHat
+    spriteName: StrawHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4c2651204da7e024b86cae5af4f1ce5e
+    layerID: 192
+    mosaicPosition: {x: 1599, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SteelPotHelm
+    spriteName: SteelPotHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6f0cb4f068af78145b856e7cb221c072
+    layerID: 191
+    mosaicPosition: {x: 1899, y: 1884}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SteelHelm [Paint]
+    spriteName: SteelHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3d79419394d98424e999cbd7b0ab8f19
+    layerID: 190
+    mosaicPosition: {x: 1898, y: 1174}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SpearmanHelm2
+    spriteName: SpearmanHelm2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fdb504bd1d2be4d40bbea978f93ac006
+    layerID: 189
+    mosaicPosition: {x: 838, y: 1890}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SpearmanHelm1
+    spriteName: SpearmanHelm1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: cb3c5529172df364799d67c5c119b075
+    layerID: 188
+    mosaicPosition: {x: 1192, y: 1912}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SnperHood
+    spriteName: SnperHood
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 9c82957d222cc7b4aad979bca05eb432
+    layerID: 187
+    mosaicPosition: {x: 1007, y: 487}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SlaveHeadband [FullHair]
+    spriteName: SlaveHeadband [FullHair]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 30a9bbd1c025ae7418ad92aff804a0c9
+    layerID: 186
+    mosaicPosition: {x: 1730, y: 1996}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SiegeArcherHelm [Paint]
+    spriteName: SiegeArcherHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2c5c8c9f4d3061746a8cbc682769100d
+    layerID: 185
+    mosaicPosition: {x: 1007, y: 1518}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ShamanHelm
+    spriteName: ShamanHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23fef74da59fc6b488a88d671ba46ef5
+    layerID: 184
+    mosaicPosition: {x: 1839, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ScoutHelm
+    spriteName: ScoutHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4b92f117649083d42ad31f66b632fbaf
+    layerID: 183
+    mosaicPosition: {x: 1192, y: 151}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RoyalArcherHat
+    spriteName: RoyalArcherHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c89befcdf94944648b389bea57703835
+    layerID: 182
+    mosaicPosition: {x: 838, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: RangerHat [Paint]
+    spriteName: RangerHat [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2f57327c453a8aa448a5a0762ef1ee8b
+    layerID: 181
+    mosaicPosition: {x: 548, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PeasantCap
+    spriteName: PeasantCap
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1b8951f0f327b7649b38b556e9cce9ab
+    layerID: 180
+    mosaicPosition: {x: 1892, y: 501}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PathfinderHood
+    spriteName: PathfinderHood
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1a48f4bc9ce182b4cbe70a57d60d619b
+    layerID: 179
+    mosaicPosition: {x: 4, y: 716}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PathfinderHat [Paint]
+    spriteName: PathfinderHat [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: bf3ff6ef837a91c45bb1e97236437bf3
+    layerID: 178
+    mosaicPosition: {x: 1730, y: 1316}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PaladinHelm [Paint]
+    spriteName: PaladinHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 47e91e673b825de4f9a693eb12fa7cd9
+    layerID: 177
+    mosaicPosition: {x: 548, y: 1457}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: NecromancerHood
+    spriteName: NecromancerHood
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4c91aaa674120304e9da49a0dc608281
+    layerID: 176
+    mosaicPosition: {x: 1007, y: 656}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MinerHelmet
+    spriteName: MinerHelmet
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4bbe5827c4a478840938b53280442cea
+    layerID: 175
+    mosaicPosition: {x: 1730, y: 1772}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MilitiamanHelmet2 [Paint]
+    spriteName: MilitiamanHelmet2 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dc1cc40667c5eee43ac66d29d8714585
+    layerID: 174
+    mosaicPosition: {x: 1192, y: 977}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MilitiamanHelmet1 [Paint]
+    spriteName: MilitiamanHelmet1 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b7b0ff064b10c8a4daeac146939c3ac7
+    layerID: 173
+    mosaicPosition: {x: 838, y: 1729}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MercenaryHelm2 [Paint]
+    spriteName: MercenaryHelm2 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 39a1c075f56939c41942735518dd8a02
+    layerID: 172
+    mosaicPosition: {x: 268, y: 228}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MercenaryHelm1 [Paint]
+    spriteName: MercenaryHelm1 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 41f23720243795e47809859393dc95c1
+    layerID: 171
+    mosaicPosition: {x: 268, y: 1758}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MasterDodgeHat
+    spriteName: MasterDodgeHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1607fc990b22efa40a6e9a5fdd325710
+    layerID: 170
+    mosaicPosition: {x: 1730, y: 903}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MarauderHood
+    spriteName: MarauderHood
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 71c436cd7cbf5b24c88da3b59bcef84e
+    layerID: 169
+    mosaicPosition: {x: 1192, y: 812}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ManticoreHelmet
+    spriteName: ManticoreHelmet
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1a0e2ff1862e15a488eb04358d39d15a
+    layerID: 168
+    mosaicPosition: {x: 838, y: 1567}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LeatherHelm
+    spriteName: LeatherHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 534df523744976c4a9e3fc8da1648155
+    layerID: 167
+    mosaicPosition: {x: 1192, y: 1284}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LeatherCap
+    spriteName: LeatherCap
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 57432b8c305573248a7d47b9143e27d0
+    layerID: 166
+    mosaicPosition: {x: 1730, y: 1415}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LandsknechtHelm [Paint]
+    spriteName: LandsknechtHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 358f5d30019675e48b588b71d23440e1
+    layerID: 165
+    mosaicPosition: {x: 1192, y: 1747}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: KnightHelm [Paint]
+    spriteName: KnightHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e518ad6266f58664d9ca5b1bebde2293
+    layerID: 164
+    mosaicPosition: {x: 4, y: 1424}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: JesterHat
+    spriteName: JesterHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ebb64b3407bd1e242aa945df5f85864d
+    layerID: 163
+    mosaicPosition: {x: 4, y: 1628}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: InquisitorHat2 [Paint]
+    spriteName: InquisitorHat2 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 169be70107e19d34781884a2a810d9d3
+    layerID: 162
+    mosaicPosition: {x: 268, y: 582}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: InquisitorHat1 [Paint]
+    spriteName: InquisitorHat1 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 38bc6db33a5bcda4680194d6dcd8fa2a
+    layerID: 161
+    mosaicPosition: {x: 268, y: 733}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: IceWizardHood
+    spriteName: IceWizardHood
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3c6bbba448ef26b49aedfb02edd7ff76
+    layerID: 160
+    mosaicPosition: {x: 838, y: 883}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HunterHelm [Paint]
+    spriteName: HunterHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: da2fa63a0f54cb54095df1c6fcf395c5
+    layerID: 159
+    mosaicPosition: {x: 268, y: 1048}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HunterHat2
+    spriteName: HunterHat2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 47c6337b41ecfd54aa6625454454072e
+    layerID: 158
+    mosaicPosition: {x: 1730, y: 1040}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HunterHat1
+    spriteName: HunterHat1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c54ab04fd0e3cb44ab3c362106686ce7
+    layerID: 157
+    mosaicPosition: {x: 1730, y: 385}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HunterHat
+    spriteName: HunterHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e0cfc1ba07de51948bb3c625f395d5c5
+    layerID: 156
+    mosaicPosition: {x: 4, y: 970}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HermitHood [Paint]
+    spriteName: HermitHood [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 09c976f4d5c6fb14aa3d4eadec2135fe
+    layerID: 155
+    mosaicPosition: {x: 1007, y: 825}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HermitHat
+    spriteName: HermitHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0a03c1e4b4b1a87419162607e8b55b66
+    layerID: 154
+    mosaicPosition: {x: 1730, y: 151}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HeavyHelm [Paint]
+    spriteName: HeavyHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5507b351e089fcc47b59439da9b95982
+    layerID: 153
+    mosaicPosition: {x: 268, y: 383}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HawkHelm
+    spriteName: HawkHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ffeea95b632b59c4095c8410bea275b3
+    layerID: 152
+    mosaicPosition: {x: 1007, y: 1883}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HalfmoonHat
+    spriteName: HalfmoonHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5b544f9f883216a448a027cbd201a10e
+    layerID: 151
+    mosaicPosition: {x: 4, y: 1817}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: HalberdierHelm [Paint]
+    spriteName: HalberdierHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7687f368a88e673479836b570414b549
+    layerID: 150
+    mosaicPosition: {x: 548, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GypsyHat
+    spriteName: GypsyHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 241ce931d83135846a4d1d9527cee9ef
+    layerID: 149
+    mosaicPosition: {x: 268, y: 1933}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GuardHelm3 [Paint]
+    spriteName: GuardHelm3 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a9b098e9ed2de664880d21788075a808
+    layerID: 148
+    mosaicPosition: {x: 1192, y: 647}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GuardHelm2 [Paint]
+    spriteName: GuardHelm2 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f0914540e5414014aa3ff852b3d5812b
+    layerID: 147
+    mosaicPosition: {x: 1192, y: 318}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GuardHelm1 [Paint]
+    spriteName: GuardHelm1 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 08eefc4cd4afdf345844a63d55a7989a
+    layerID: 146
+    mosaicPosition: {x: 1192, y: 483}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GladiatorHelm2
+    spriteName: GladiatorHelm2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3e4cb22ac10c2eb48afc5e9340b6ec93
+    layerID: 145
+    mosaicPosition: {x: 838, y: 335}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GladiatorHelm1
+    spriteName: GladiatorHelm1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6625cb8e89f7e5f42b87cb427d557984
+    layerID: 144
+    mosaicPosition: {x: 838, y: 151}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: FireWizardHood
+    spriteName: FireWizardHood
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 396204d33c8276e418b853abfe6555a5
+    layerID: 143
+    mosaicPosition: {x: 548, y: 181}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: FireAdeptHood
+    spriteName: FireAdeptHood
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 7a4f7835a7e123b44bd8dbc6955394ee
+    layerID: 142
+    mosaicPosition: {x: 548, y: 361}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ExpertHunterHat
+    spriteName: ExpertHunterHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 79ff3923a8681214a91e4e043e492e80
+    layerID: 141
+    mosaicPosition: {x: 1730, y: 269}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ExpertBowmanHat
+    spriteName: ExpertBowmanHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b8f143e1e6d8a7e4f8abac6ab470b628
+    layerID: 140
+    mosaicPosition: {x: 548, y: 1817}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: EnforcedHelm [Paint]
+    spriteName: EnforcedHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a89a93236069b934b9565b0767e2e70d
+    layerID: 139
+    mosaicPosition: {x: 838, y: 1223}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DwellerHood [Paint]
+    spriteName: DwellerHood [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 90755117a885614458a509b57b6b1c0f
+    layerID: 138
+    mosaicPosition: {x: 268, y: 1406}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DruidHat [Paint]
+    spriteName: DruidHat [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: db9b566a8a536d94ca82696f6e125bd4
+    layerID: 137
+    mosaicPosition: {x: 1365, y: 471}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DestroyerHelm [Paint]
+    spriteName: DestroyerHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f19afe5cd3b2a9d41b8f9a9825c41e57
+    layerID: 136
+    mosaicPosition: {x: 4, y: 526}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: DeserterBandage [FullHair]
+    spriteName: DeserterBandage [FullHair]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 38e173fb3790e564b9c06c50f129232d
+    layerID: 135
+    mosaicPosition: {x: 1899, y: 1772}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ClericHood [Paint]
+    spriteName: ClericHood [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: dbd9bf4170b2a2144a77c5b354a8c589
+    layerID: 134
+    mosaicPosition: {x: 1007, y: 994}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ChampionHelm
+    spriteName: ChampionHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 54c89afa18cfd2d4eb04dd56a5606c44
+    layerID: 133
+    mosaicPosition: {x: 838, y: 1405}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CataphractHelm [Paint]
+    spriteName: CataphractHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 926948fc117c59e47a67b9df8af832c8
+    layerID: 132
+    mosaicPosition: {x: 4, y: 1155}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CardinalHat [Paint]
+    spriteName: CardinalHat [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 8aa6aaede40a86f4c95874979caa0aea
+    layerID: 131
+    mosaicPosition: {x: 1730, y: 501}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BowmanHat [Paint]
+    spriteName: BowmanHat [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a6d4b6e2a1ff96245b170c09efe5135d
+    layerID: 130
+    mosaicPosition: {x: 1373, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BlacksmithHeadband
+    spriteName: BlacksmithHeadband
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 172e21c8687c6894fa89c1a4b2fd5585
+    layerID: 129
+    mosaicPosition: {x: 1541, y: 151}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BishopHat [FullHair]
+    spriteName: BishopHat [FullHair]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6b58d5d58849f944e9d6d956679fce41
+    layerID: 128
+    mosaicPosition: {x: 1919, y: 771}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BerserkHelm
+    spriteName: BerserkHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 37e531f652fae92489eefbf09ad58fca
+    layerID: 127
+    mosaicPosition: {x: 268, y: 1610}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AssassinHood [Paint]
+    spriteName: AssassinHood [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3303deda2e3d85a459579cfc4ef224d8
+    layerID: 126
+    mosaicPosition: {x: 838, y: 1053}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ArcherHat
+    spriteName: ArcherHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3bc8ee62636781c4d98702c95f36f7df
+    layerID: 125
+    mosaicPosition: {x: 1730, y: 1884}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AmateurDodgeHat
+    spriteName: AmateurDodgeHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6a3b9dfb4e7b35c449c5bcda77a0e998
+    layerID: 124
+    mosaicPosition: {x: 1730, y: 771}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AmateurDipperHat
+    spriteName: AmateurDipperHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: d7d0b209d8a458e4fa82e0c0070d8369
+    layerID: 123
+    mosaicPosition: {x: 1730, y: 1658}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AgileHat
+    spriteName: AgileHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 3f977fe5711c1214b85c22bf52808b92
+    layerID: 122
+    mosaicPosition: {x: 1730, y: 1548}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: VikingIronHelm3
+    spriteName: VikingIronHelm3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0d5ebe55d7e01d54d9004763a1871c0c
+    layerID: 121
+    mosaicPosition: {x: 1365, y: 151}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: VikingLeatherHelm
+    spriteName: VikingLeatherHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 5501cbdb4b4091b419a48ce7056f0365
+    layerID: 120
+    mosaicPosition: {x: 1730, y: 1174}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MountainHelm [Paint]
+    spriteName: MountainHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 2a435a41a2613cd45a794472c7bb4d79
+    layerID: 119
+    mosaicPosition: {x: 548, y: 541}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ShamanMask [FullHair]
+    spriteName: ShamanMask [FullHair]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 0283e9acfaacd3949823a4be1fdf076c
+    layerID: 118
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ShamanMask3 [FullHair]
+    spriteName: ShamanMask3 [FullHair]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f1cf7eb6d6f03fe419cfec22ba189570
+    layerID: 117
+    mosaicPosition: {x: 4, y: 296}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SandElderTurban
+    spriteName: SandElderTurban
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4e51e45c9472e3e4ebac6654c37dc1d2
+    layerID: 116
+    mosaicPosition: {x: 838, y: 518}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SamuraiElderHelm
+    spriteName: SamuraiElderHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1ce28c27c572cd240993d332a9372f46
+    layerID: 115
+    mosaicPosition: {x: 268, y: 866}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: NinjaHelm3 [Paint]
+    spriteName: NinjaHelm3 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b58f3d6ce8b98b94b93620ca90914300
+    layerID: 114
+    mosaicPosition: {x: 548, y: 1640}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: NinjaHelm2 [Paint]
+    spriteName: NinjaHelm2 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 93d7585cdafacb34ab41601b8e959a5f
+    layerID: 113
+    mosaicPosition: {x: 548, y: 1280}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: NinjaHelm1 [Paint]
+    spriteName: NinjaHelm1 [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eb9056df603e3fb42a5718ba2290640d
+    layerID: 112
+    mosaicPosition: {x: 1007, y: 1347}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SamuraiHelm3
+    spriteName: SamuraiHelm3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: ea33d02167e7b9645b5a4bba46bc13ca
+    layerID: 111
+    mosaicPosition: {x: 548, y: 732}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SamuraiHelm2
+    spriteName: SamuraiHelm2
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f284adf56ff65ce48a34b4d767e4904b
+    layerID: 110
+    mosaicPosition: {x: 548, y: 912}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SamuraiHelm1
+    spriteName: SamuraiHelm1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 23238b047f6c4b1419c66daaf2cda86f
+    layerID: 109
+    mosaicPosition: {x: 1541, y: 301}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: FalconIronHelm
+    spriteName: FalconIronHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a60ff4aa6ae55dc49bd45caca9667df3
+    layerID: 108
+    mosaicPosition: {x: 1007, y: 151}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: EliteKnightHelm
+    spriteName: EliteKnightHelm
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1b0ec62a0d2f96a4191c8d889e15cc08
+    layerID: 107
+    mosaicPosition: {x: 1007, y: 1163}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: CrusaderHelm [Paint]
+    spriteName: CrusaderHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b031d8c8e27306044b3332ec8c3101e8
+    layerID: 106
+    mosaicPosition: {x: 1192, y: 1131}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: WarriorHelm [Paint]
+    spriteName: WarriorHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 136904a89d13d8847b5e0a569dd12233
+    layerID: 105
+    mosaicPosition: {x: 1192, y: 1589}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: SharpHelm [Paint]
+    spriteName: SharpHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: df1ff2f032d838c41b036da196ad2d87
+    layerID: 104
+    mosaicPosition: {x: 1365, y: 313}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: GuardHelm [Paint]
+    spriteName: GuardHelm [Paint]
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 21c2503e82e3a3a4390afc3ff10bd4b2
+    layerID: 103
+    mosaicPosition: {x: 1192, y: 1437}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AdvancedDipperHat
+    spriteName: AdvancedDipperHat
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 98241c8247d8f104987bfb3ec11a38b6
+    layerID: 102
+    mosaicPosition: {x: 1730, y: 657}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
