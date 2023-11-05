@@ -4,10 +4,15 @@ using System.Collections.Generic;
 using UnityEditor;
 
 public class LevelSelectionLogic : MonoBehaviour {
+
+	public Sprite finishImg;
 	public Sprite unlockImg;
 	public Sprite lockImg;
+	public GameObject levelMain;
+	public GameObject levelSub;
 
 	public List<LevelList> levelList = new List<LevelList>(); //List of level class;
+	public List<LevelList> subLevelList = new List<LevelList>(); //List of level class;
 	private Vector2 touchPos;
 	private CameraControls cam; 		// Camera controls reference;
 	private float touchTime;			// How long touch time;
@@ -15,34 +20,50 @@ public class LevelSelectionLogic : MonoBehaviour {
 
 	void Awake()
 	{
+		Destroy(GameObject.FindGameObjectWithTag("Player"));
 		cam = Camera.main.GetComponent<CameraControls>();
 		if (PlayerPrefs.HasKey("currentCamPos") && cam.cameraPosition == CameraControls.CameraPosition.SaveCurrent)
 		{
 			cam.defaultPosition = PlayerPrefsX.GetVector3("currentCamPos");
 		}
-
+		int lvlIndex = 4;
+		int lvlNomber = 0;
 		//Check if player prefs have any data with levels indexes, if so - assign;
 		foreach (LevelList level in levelList)
 		{
-			if(PlayerPrefs.HasKey("isFinished" + level.LevelIndex.ToString()))
+			level.LevelObject = levelMain.transform.GetChild(lvlNomber).GetComponent<SpriteRenderer>();
+			lvlNomber += 1;
+			level.LevelIndex = lvlIndex;
+			lvlIndex += 1;
+
+			if (PlayerPrefs.HasKey("isFinished" + level.LevelIndex.ToString()))
 			{
 				level.isFinished = PlayerPrefsX.GetBool("isFinished" + level.LevelIndex.ToString());
 			}
+		}
+		lvlNomber = 0;
+		foreach (LevelList level in subLevelList)
+		{
+			level.LevelObject = levelSub.transform.GetChild(lvlNomber).GetComponent<SpriteRenderer>();
+			lvlNomber += 1;
+			lvlIndex += 1;
+			level.LevelIndex = lvlIndex;
 
+			if (PlayerPrefs.HasKey("isFinished" + level.LevelIndex.ToString()))
+			{
+				level.isFinished = PlayerPrefsX.GetBool("isFinished" + level.LevelIndex.ToString());
+			}
 		}
 
 		for (int i = 0; i < levelList.Count; i++)
 		{
-			// Проверьте, был ли завершен требуемый уровень для разблокировки текущего уровня
 			if (levelList[i].requiredUnlockLevel > 0 && levelList[i].requiredUnlockLevel <= levelList.Count)
 			{
 				levelList[i].unlocked = levelList[levelList[i].requiredUnlockLevel - 1].isFinished;
 			}
 			if (levelList[i].isFinished)
 			{
-
-
-				//unlock next level;
+				
 				if(i+1 <= levelList.Count-1)
 				{
 					levelList[i+1].unlocked = true;
@@ -52,13 +73,41 @@ public class LevelSelectionLogic : MonoBehaviour {
 			}
 
 			//draw unlock level sprite if level is unlocked and conversely;
-			if(levelList[i].unlocked)
+
+			if (levelList[i].isFinished && levelList[i].unlocked)
+			{
+				levelList[i].LevelObject.sprite = finishImg;
+			}
+			if (levelList[i].unlocked && !levelList[i].isFinished)
 			{
 				levelList[i].LevelObject.sprite = unlockImg;
 			}
-			else
+			if(!levelList[i].isFinished && !levelList[i].unlocked)
 			{
 				levelList[i].LevelObject.sprite = lockImg;
+			}
+		}
+
+		for (int i = 0; i < subLevelList.Count; i++)
+		{
+			if (subLevelList[i].isFinished)
+			{
+				subLevelList[i + 1].unlocked = true;
+				if (cam.cameraPosition == CameraControls.CameraPosition.WithNextLevel)
+					cam.defaultPosition = subLevelList[i + 1].LevelObject.transform.position;
+			}
+
+			if (subLevelList[i].isFinished && subLevelList[i].unlocked)
+			{
+				subLevelList[i].LevelObject.sprite = finishImg;
+			}
+			if (subLevelList[i].unlocked && !subLevelList[i].isFinished)
+			{
+				subLevelList[i].LevelObject.sprite = unlockImg;
+			}
+			if (!subLevelList[i].isFinished && !subLevelList[i].unlocked)
+			{
+				subLevelList[i].LevelObject.sprite = lockImg;
 			}
 		}
 	}
@@ -78,9 +127,21 @@ public class LevelSelectionLogic : MonoBehaviour {
 		{
 			for (int i = 0; i < levelList.Count; i++)
 			{
-				if(levelList[i].unlocked && levelList[i].LevelObject.bounds.Contains(touchPos) && touchTime < reactTime)
+				if(!levelList[i].isFinished && levelList[i].unlocked && levelList[i].LevelObject.bounds.Contains(touchPos) && touchTime < reactTime)
 				{
 					Application.LoadLevel(levelList[i].LevelIndex);
+					PlayerPrefsX.SetVector3("currentCamPos", cam.transform.position);
+				}
+			}
+			touchTime = 0;
+		}
+		if (Input.GetMouseButtonUp(0))
+		{
+			for (int i = 0; i < subLevelList.Count; i++)
+			{
+				if (!subLevelList[i].isFinished && subLevelList[i].unlocked && subLevelList[i].LevelObject.bounds.Contains(touchPos) && touchTime < reactTime)
+				{
+					Application.LoadLevel(subLevelList[i].LevelIndex);
 					PlayerPrefsX.SetVector3("currentCamPos", cam.transform.position);
 				}
 			}
@@ -97,21 +158,11 @@ public class LevelList
 {
 	public SpriteRenderer LevelObject;			//Level object renderer in the scene (assign from hierarchy panel);
 	public int LevelIndex;
+	public bool needrequiredUnlockLevel;
 	public int requiredUnlockLevel;
 	public bool unlocked;						//Is level unlocked? you can unlock it as default;
 	public bool isFinished;						//Is level finished?
-	public LevelSettings levelSettings = new LevelSettings();			//Level settings class, contain sprites to replace the default ones;
-
-
 	//some bools for editor script purposes;
 	public bool expandLevelList = true;
 	public bool expandLevelSettings = true;
-}
-
-//NOTE: assign this sprites from the project panel;
-[System.Serializable]
-public class LevelSettings
-{
-	public Sprite LevelUnlocked;				//Unlocked level sprite;
-	public Sprite LevelLocked;					//Locked level sprite;
 }

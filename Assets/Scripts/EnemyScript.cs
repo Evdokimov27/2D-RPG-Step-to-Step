@@ -197,7 +197,7 @@ public class EnemyScript : NetworkBehaviour
 
             if (currentHealth <= 0)
             {
-                Die();
+                StartCoroutine(Die());
             }
         }
     }
@@ -205,7 +205,8 @@ public class EnemyScript : NetworkBehaviour
     private IEnumerator Die()
     {
         animator.SetInteger("State", 9);
-        yield return new WaitForSeconds(5f);
+        this.enabled = false;
+        yield return new WaitForSeconds(2f);
         Destroy(this.gameObject);
     }
 }

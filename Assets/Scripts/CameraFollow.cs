@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public GameObject playerPrefab;
+    public GameObject playerObj;
     public Transform target;
     public Transform player;
     public Transform enemy;
@@ -13,10 +15,16 @@ public class CameraFollow : MonoBehaviour
     private Vector3 offset;
     private bool isFollowing = false;
 
-    private void Start()
+	private void Awake()
+	{
+        playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj == null) playerObj = Instantiate(playerPrefab, new Vector3(-40,-7.5f), Quaternion.identity);
+    }
+	private void Start()
     {
         offset = new Vector3(0, 0, -10);
         originalOffset = offset;
+       
     }
 
     private void LateUpdate()

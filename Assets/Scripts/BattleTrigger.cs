@@ -47,40 +47,40 @@ public class BattleTrigger : NetworkBehaviour
                     StartBattleWithPlayer(nearestPlayer);
                 }
             }
-
-            // Найдем ближайшего врага в сцене
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            GameObject nearestEnemy = null;
-            float nearestDistance = float.MaxValue;
-
-            foreach (GameObject enemy in enemies)
             {
-                float distance = Vector3.Distance(player.transform.position, enemy.transform.position);
-                if (distance < nearestDistance)
+                GameObject nearestEnemy = null;
+                float nearestDistance = float.MaxValue;
+
+                foreach (GameObject enemy in enemies)
                 {
-                    nearestDistance = distance;
-                    nearestEnemy = enemy;
-                    player.GetComponent<Player>().nearestEnemy = nearestEnemy.GetComponent<EnemyScript>();
+                    float distance = Vector3.Distance(player.transform.position, enemy.transform.position);
+                    if (distance < nearestDistance)
+                    {
+                        nearestDistance = distance;
+                        nearestEnemy = enemy;
+                        player.GetComponent<Player>().nearestEnemy = nearestEnemy.GetComponent<EnemyScript>();
 
+                    }
                 }
-            }
 
-            // Проверим, если расстояние до ближайшего врага меньше battleDistance, начнем бой
-            if (nearestEnemy != null && nearestDistance < battleDistance)
-            {
-                if (!player.GetComponent<Player>().inBattle)
+                // Проверим, если расстояние до ближайшего врага меньше battleDistance, начнем бой
+                if (nearestEnemy != null && nearestDistance < battleDistance)
                 {
-                    nearestEnemy.GetComponent<EnemyScript>().enabled = true;
-                    player.GetComponent<Player>().StartBattle();
-                    player.GetComponent<Player>().turn.enemies.Add(nearestEnemy);
+                    if (!player.GetComponent<Player>().inBattle)
+                    {
+                        nearestEnemy.GetComponent<EnemyScript>().enabled = true;
+                        player.GetComponent<Player>().StartBattle();
+                        player.GetComponent<Player>().turn.enemies.Add(nearestEnemy);
+                    }
                 }
-            }
-            else
-            {
-                player.GetComponent<Player>().turn.enemies.Clear();
-                player.GetComponent<Player>().EndBattle();
-            }
+                else
+                {
+                    player.GetComponent<Player>().turn.enemies.Clear();
+                    player.GetComponent<Player>().EndBattle();
+                }
 
+            }
         }
        
 

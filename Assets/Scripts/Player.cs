@@ -26,7 +26,6 @@ public class Player : NetworkBehaviour
 	public EquipmentManager equipmentManager;
 	public bool canMove = true;
 	public bool isHub = false;
-	public Scene hubScene;
 	public ActionPointsUI ap;
 	public GameObject apUI;
 	public EnemyScript nearestEnemy;
@@ -333,8 +332,11 @@ public class Player : NetworkBehaviour
 	{
 		//if (!isLocalPlayer) return;
 		{
-			if (SceneManager.GetActiveScene() == hubScene) isHub = true;
+			if (SceneManager.GetActiveScene().buildIndex == 1) isHub = true;
 			else isHub = false;
+			if (SceneManager.GetActiveScene().buildIndex == 0) canMove = false;
+			else canMove = true;
+
 			maxHealth = (float)(baseHealth * strength);
 			if (armored > 0)
 			{

@@ -10,7 +10,7 @@ public static class Data
 	public static void SaveData(int levelIndex, bool isFinished)
 	{
 		PlayerPrefsX.SetBool("isFinished"+levelIndex.ToString(), isFinished);
-
+		Debug.Log(PlayerPrefsX.GetBool("isFinished" + levelIndex.ToString(), isFinished));
 	}
 
 }
