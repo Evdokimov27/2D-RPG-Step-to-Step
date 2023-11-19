@@ -1,15 +1,15 @@
 using UnityEngine;
-using Mirror;
-public class ItemUpgrade : NetworkBehaviour
+public class ItemUpgrade : MonoBehaviour
 {
     public Player player;
     public float baseSuccessChance = 0.95f; // Базовый шанс успешного улучшения
-    public float levelBonusMultiplier = 0.05f; // Множитель бонуса на каждый уровень
+    public float levelBonusMultiplier = 0.05f; // Сложность улучшения
 
 
     private string[] armorPrefixes = { "Стальная", "Железная", "Кожаная", "Секретная", "Мифриловая", "Драконья", "Серебряная", "Титановая", "Каменная", "Кираса", "Чешуйчатая", "Камуфляжная", "Шипастая", "Королевская", "Героическая", "Черная", "Бесконечная", "Магическая", "Паладинова", "Подкожанная" };
     private string[] helmetPrefixes = { "Железный", "Стальной", "Кожаный", "Секретный", "Золотой", "Серебряный", "Бронзовый", "Драконий", "Изумрудный", "Сапфировый", "Череп", "Алмазный", "Бриллиантовый", "Платиновый" };
     private string[] ringPrefixes = { "Золотое", "Серебряное", "Медное", "Драгоценное", "Алмазное", "Сапфировое", "Рубиновое", "Изумрудное", "Жемчужное", "Кристальное", "Магическое", "Таинственное", "Волшебное", "Огненное", "Ледяное", "Сияющее", "Светящееся", "Небесное", "Подземное", "Пылающее" };
+    private string[] healthPrefixes = { "Лечебный", "Исцеляющий", "Врачевающий", "Животворящий", "Регенерирующий", "Эликсированный", "Восстанавливающий", "Чудотворный", "Жизнестойкий", "Медикаментозный", "Энергетизирующий", "Антидотный", "Волшебный"};
 
     private string[] axeWeaponPrefixes = { "Острый", "Могучий", "Дубовый", "Молниеносный", "Вихревой", "Древний", "Каменный", "Кровавый", "Зараженный", "Зубчатый", "Дьявольский", "Шипастый", "Острый как бритва", "Изогнутый", "Кривой", "Колючий", "Хищный", "Коготь", "Боевой", "Варварский" };
     private string[] daggerWeaponPrefixes = { "Колющий", "Смертоносный", "Теневой", "Серебряный", "Каменный", "Мститель", "Костяной", "Древний", "Ядовитый", "Хирургический", "Остроконечный", "Быстрый", "Меткий", "Ритуальный", "Ловкий", "Камикадзе", "Подлый", "Темный", "Скрытый", "Убийца" };
@@ -18,9 +18,12 @@ public class ItemUpgrade : NetworkBehaviour
 
     private string[] armorSuffixes = { "Броня", "Доспехи", "Плащ", "Нагрудник", "Щит", "Мантия", "Туника", "Диверсант", "Защита", "Складка", "Оболочка", "Кираса", "Вуаль", "Тога", "Костюм", "Парча", "Перчатки", "Сапоги", "Шарф", "Амуниция" };
     private string[] helmetSuffixes = { "Шлем", "Маска", "Каска", "Голова", "Венец", "Шапка", "Корона", "Кокошник", "Маскировка", "Гарнитур", "Вуаль", "Фетр", "Кепка", "Панама", "Повязка", "Лента", "Соломенная шляпа", "Шляпа-цилиндр", "Скейтерская каска", "Лыжная маска" };
-    private string[] ringSuffixes = { "Кольцо" };
+    private string[] ringSuffixes = { "Шлем", "Маска", "Каска", "Голова", "Венец", "Шапка" };
+    private string[] healthSuffixes = { "Эликсир", "Лечебник", "Снадобье", "Эссенция", "Энергия", "Зелье", "Витал"};
 
-    public override void OnStartLocalPlayer()
+
+
+    public void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
@@ -33,6 +36,7 @@ public class ItemUpgrade : NetworkBehaviour
         if (newItem.itemLevel < 1) newItem.itemLevel = 1;
         newItem.itemType = itemType;
         newItem.weaponType = weaponTypes;
+        newItem.healthStat = new HealthStat();
         newItem.rare = itemRare;
         newItem.itemValue = (int)(newItem.itemLevel * 1.5);
         newItem.icon = SpriteRandom(item);
@@ -42,7 +46,6 @@ public class ItemUpgrade : NetworkBehaviour
             case ItemTypes.Weapon:
                 {
                     newItem.baseStats.damage = (int)System.Math.Round(CalculateItemStat(item)[0]);
-                    newItem.durability = Random.Range(30, 101);
                     break;
                 }
             case ItemTypes.Armor:
@@ -54,12 +57,18 @@ public class ItemUpgrade : NetworkBehaviour
             case ItemTypes.Helmet:
                 {
                     newItem.baseStats.armor = (int)System.Math.Round(CalculateItemStat(item)[0]);
+                    newItem.durability = Random.Range(30, 101);
+                    break;
+                }
+            case ItemTypes.Health:
+                {
+                    newItem.healthStat.health = (int)System.Math.Round(CalculateItemStat(item)[0]);
+                    newItem.durability = Random.Range(1, 5);
 
                     break;
                 }
             case ItemTypes.Accessory:
                 {
-
                     newItem.statBonuses.strength = (int)System.Math.Round(CalculateItemStat(item)[0]);
                     newItem.statBonuses.agility = (int)System.Math.Round(CalculateItemStat(item)[1]);
                     newItem.statBonuses.intelligence = (int)System.Math.Round(CalculateItemStat(item)[2]);
@@ -69,6 +78,11 @@ public class ItemUpgrade : NetworkBehaviour
                 {
                     newItem.itemName = "Золото";
                     newItem.money.count = Random.Range(1,player.level*2);
+                    break;
+                }
+            case ItemTypes.Sharpening:
+                {
+                    newItem.sharpening.chanceModifier = (float)CalculateItemStat(item)[0];
                     break;
                 }
                 break;
@@ -122,6 +136,10 @@ public class ItemUpgrade : NetworkBehaviour
                 prefix = ringPrefixes[Random.Range(0, ringPrefixes.Length)];
                 suffix = ringSuffixes[Random.Range(0, ringSuffixes.Length)];
                 break;
+            case ItemTypes.Health:
+                prefix = healthPrefixes[Random.Range(0, healthPrefixes.Length)];
+                suffix = healthSuffixes[Random.Range(0, healthSuffixes.Length)];
+                break;
             case ItemTypes.Weapon:
                 switch (item.weaponType)
                 {
@@ -160,23 +178,32 @@ public class ItemUpgrade : NetworkBehaviour
     public float[] CalculateItemStat(Items item)
     {
        
-        float rare = 1 + GetEnumIndexByValue(item.rare);
+        float rare = (float)1+GetEnumIndexByValue(item.rare);
         float level = 0;
         float[] finaly = { 0,0,0 };
         ItemTypes type = item.itemType;
         level = item.itemLevel;
-
-        if(ItemTypes.Armor == type) finaly[0] = (Random.Range(rare, 1 + rare*2) * (player.agility / 5)) * level/5;
-        if (ItemTypes.Helmet == type) finaly[0] = (Random.Range(rare, 1 + rare * 2) * (player.agility / 7)) * level / 5;
-        if (ItemTypes.Weapon == type) finaly[0] = (Random.Range(rare, 1 + rare * 2) * (player.strength / 2)) * level/ 5;
+        var rareValue = rare * 1.05f - GetEnumIndexByValue(item.rare);
+        if (item.rare == ItemRares.Обычная) rareValue = 1f;
+        if (ItemTypes.Armor == type) finaly[0] = rareValue * ((player.agility / 5 * (float)level / 5) +1);
+        if (ItemTypes.Helmet == type) finaly[0] = rareValue * ((player.agility / 7 * (float)level / 5) + 1);
+        if (ItemTypes.Weapon == type) finaly[0] = rareValue * ((player.strength / 2 * (float)level / 5) + 1);
+        if (ItemTypes.Health == type) finaly[0] = rareValue * (((player.strength / 10) * (float)level / 5) + 1);
+        if (ItemTypes.Sharpening == type)
+        {
+            finaly[0] = (float)player.intelligence / 100 * rareValue;
+        }
         if (ItemTypes.Accessory == type)
         {
-            finaly[0] = Random.Range(0, 1 + rare * 2) * level/10;
-            finaly[1] = Random.Range(0, 1 + rare * 2) * level/10;
-            finaly[2] = Random.Range(0, 1 + rare * 2) * level/10;
+            finaly[0] = Random.Range(0, 1 + rare * 1.1f) * level/10;
+            finaly[1] = Random.Range(0, 1 + rare * 1.1f) * level/10;
+            finaly[2] = Random.Range(0, 1 + rare * 1.1f) * level/10;
         }
-        Debug.Log(finaly[0]);
-        return finaly;
+
+        if (finaly[0] < 1) finaly[0] = 1;
+        if (finaly[1] < 1) finaly[1] = 1;
+        if (finaly[2] < 1) finaly[2] = 1;
+        return finaly;  
     }
     public int GetEnumIndexByValue(ItemRares enumValue)
     {
@@ -343,6 +370,26 @@ public class ItemUpgrade : NetworkBehaviour
 
                 }
                 break;
+            case ItemTypes.Health:
+                switch (item.rare)
+                {
+                    case ItemRares.Обычная:
+                        randomSprite = item.potion.potionIconCommon[Random.Range(0, item.potion.potionIconCommon.Length)];
+                        break;                     
+                    case ItemRares.Необычная:      
+                        randomSprite = item.potion.potionIconUncommon[Random.Range(0, item.potion.potionIconUncommon.Length)];
+                        break;                    
+                    case ItemRares.Редкая:        
+                        randomSprite = item.potion.potionIconRare[Random.Range(0, item.potion.potionIconRare.Length)];
+                        break;                    
+                    case ItemRares.Эпическая:     
+                        randomSprite = item.potion.potionIconEpic[Random.Range(0, item.potion.potionIconEpic.Length)];
+                        break;                    
+                    case ItemRares.Легендарная:   
+                        randomSprite = item.potion.potionIconLegendary[Random.Range(0, item.potion.potionIconLegendary.Length)];
+                        break;
+                }
+                break;
             case ItemTypes.Armor:
                 switch (item.rare)
                 {
@@ -381,6 +428,30 @@ public class ItemUpgrade : NetworkBehaviour
                         break;
                     case ItemRares.Легендарная:
                         randomSprite = item.ring.ringIconLegendary[Random.Range(0, item.ring.ringIconLegendary.Length)];
+                        break;
+                }
+                break;
+            case ItemTypes.Sharpening:
+                switch (item.rare)
+                {
+                    case ItemRares.Обычная:
+                        randomSprite = item.sharpeningIcon.sharpeningIconCommon;
+
+                        break;
+                    case ItemRares.Необычная:
+                        randomSprite = item.sharpeningIcon.sharpeningIconRare;
+
+                        break;
+                    case ItemRares.Редкая:
+                        randomSprite = item.sharpeningIcon.sharpeningIconRare;
+
+                        break;
+                    case ItemRares.Эпическая:
+                        randomSprite = item.sharpeningIcon.sharpeningIconRare;
+                        break;
+                    case ItemRares.Легендарная:
+                        randomSprite = item.sharpeningIcon.sharpeningIconRare;
+
                         break;
                 }
                 break;
@@ -488,25 +559,32 @@ public class ItemUpgrade : NetworkBehaviour
         accessory.statBonuses.agility += Random.Range(1, accessory.itemLevel / 5 + 1) * upgradeLevel / 10;
         accessory.statBonuses.intelligence += Random.Range(1, accessory.itemLevel / 5 + 1) * upgradeLevel / 10;
         accessory.levelUpgrade += 1;
-
     }
 
     private void Repair(Items item)
     {
-        // Логика улучшения аксессуаров
-       item.durability -= Random.Range(25, 75);
-        
+       item.durability += Random.Range(25, 50);
     }
 
-    private void DecreaseDurability(Items item)
+    public void DecreaseDurability(Items item)
     {
         // Уменьшение прочности при неудачном улучшении
         item.durability -= Random.Range(5, 11);
 
         if (item.durability <= 0)
         {
-            Destroy(item.gameObject);
-            player.GetComponent<Inventory>().AddItem();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<EquipmentManager>().DropItem(item);
+            GameObject.FindGameObjectWithTag("inventoryUI").GetComponent<InventoryUI>().PopulateInventoryUI();
+        }
+    }
+    public void UseDurability(Items item, int count)
+    {
+        // Уменьшение прочности при неудачном улучшении
+        item.durability -= count;
+        if (item.durability <= 0)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<EquipmentManager>().DropItem(item);
+            GameObject.FindGameObjectWithTag("inventoryUI").GetComponent<InventoryUI>().PopulateInventoryUI();
         }
     }
 }

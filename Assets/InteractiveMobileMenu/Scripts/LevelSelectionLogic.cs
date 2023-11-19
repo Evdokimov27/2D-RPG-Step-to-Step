@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using YG;
 
 public class LevelSelectionLogic : MonoBehaviour {
 
@@ -16,45 +17,58 @@ public class LevelSelectionLogic : MonoBehaviour {
 	private Vector2 touchPos;
 	private CameraControls cam; 		// Camera controls reference;
 	private float touchTime;			// How long touch time;
-	private float reactTime = 0.25F;		// Fixed touch time to level loading happens;
+	private float reactTime = 0.25F;        // Fixed touch time to level loading happens;
+	private bool loadSave = true;
+	public void Load() => YandexGame.LoadProgress();
 
 	void Awake()
 	{
+		if ((YandexGame.savesData.levelList.Count == 0 || YandexGame.savesData.subLevelList.Count == 0))
+		{
+			for (int i = 0; i < levelList.Count; i++)
+			{
+				YandexGame.savesData.levelList.Add(new SaveLevel() { nameLevel = "Main " + i, isFinished = levelList[i].isFinished });
+			}
+			levelList[0].unlocked = true;
+
+			for (int i = 0; i < subLevelList.Count; i++)
+			{
+				YandexGame.savesData.subLevelList.Add(new SaveLevel() { nameLevel = "Sub " + i, isFinished = subLevelList[i].isFinished });
+			}
+		}
 		Destroy(GameObject.FindGameObjectWithTag("Player"));
 		cam = Camera.main.GetComponent<CameraControls>();
-		if (PlayerPrefs.HasKey("currentCamPos") && cam.cameraPosition == CameraControls.CameraPosition.SaveCurrent)
-		{
-			cam.defaultPosition = PlayerPrefsX.GetVector3("currentCamPos");
-		}
-		int lvlIndex = 4;
-		int lvlNomber = 0;
-		//Check if player prefs have any data with levels indexes, if so - assign;
-		foreach (LevelList level in levelList)
-		{
-			level.LevelObject = levelMain.transform.GetChild(lvlNomber).GetComponent<SpriteRenderer>();
-			lvlNomber += 1;
-			level.LevelIndex = lvlIndex;
-			lvlIndex += 1;
+		cam.defaultPosition = YandexGame.savesData.currentCamPos;
 
-			if (PlayerPrefs.HasKey("isFinished" + level.LevelIndex.ToString()))
-			{
-				level.isFinished = PlayerPrefsX.GetBool("isFinished" + level.LevelIndex.ToString());
-			}
-		}
-		lvlNomber = 0;
-		foreach (LevelList level in subLevelList)
-		{
-			level.LevelObject = levelSub.transform.GetChild(lvlNomber).GetComponent<SpriteRenderer>();
-			lvlNomber += 1;
-			lvlIndex += 1;
-			level.LevelIndex = lvlIndex;
+		
 
-			if (PlayerPrefs.HasKey("isFinished" + level.LevelIndex.ToString()))
+		int lvlIndex = 2;
+		for (int i = 0; i < levelList.Count; i++)
+		{
+			levelList[i].LevelObject = levelMain.transform.GetChild(i).GetComponent<SpriteRenderer>();
+			levelList[i].LevelIndex = lvlIndex;
+			lvlIndex += 1;
+			if (YandexGame.savesData.levelList.Count > 0)
 			{
-				level.isFinished = PlayerPrefsX.GetBool("isFinished" + level.LevelIndex.ToString());
+				levelList[i].isFinished = YandexGame.savesData.levelList[i].isFinished;
 			}
 		}
 
+
+
+		for (int i = 0; i < subLevelList.Count; i++)
+		{
+			subLevelList[i].LevelObject = levelSub.transform.GetChild(i).GetComponent<SpriteRenderer>();
+			subLevelList[i].LevelIndex = lvlIndex;
+			lvlIndex += 1;
+			if (YandexGame.savesData.subLevelList.Count > 0)
+			{
+				subLevelList[i].isFinished = YandexGame.savesData.subLevelList[i].isFinished;
+			}
+		}
+		
+	
+		
 		for (int i = 0; i < levelList.Count; i++)
 		{
 			if (levelList[i].requiredUnlockLevel > 0 && levelList[i].requiredUnlockLevel <= levelList.Count)
@@ -63,16 +77,16 @@ public class LevelSelectionLogic : MonoBehaviour {
 			}
 			if (levelList[i].isFinished)
 			{
-				
-				if(i+1 <= levelList.Count-1)
+
+				if (i + 1 <= levelList.Count - 1)
 				{
-					levelList[i+1].unlocked = true;
-					if(cam.cameraPosition == CameraControls.CameraPosition.WithNextLevel)
-						cam.defaultPosition = levelList[i+1].LevelObject.transform.position;
+					levelList[i + 1].unlocked = true;
+					if (cam.cameraPosition == CameraControls.CameraPosition.WithNextLevel)
+						cam.defaultPosition = levelList[i + 1].LevelObject.transform.position;
 				}
 			}
 
-			//draw unlock level sprite if level is unlocked and conversely;
+
 
 			if (levelList[i].isFinished && levelList[i].unlocked)
 			{
@@ -82,7 +96,7 @@ public class LevelSelectionLogic : MonoBehaviour {
 			{
 				levelList[i].LevelObject.sprite = unlockImg;
 			}
-			if(!levelList[i].isFinished && !levelList[i].unlocked)
+			if (!levelList[i].isFinished && !levelList[i].unlocked)
 			{
 				levelList[i].LevelObject.sprite = lockImg;
 			}
@@ -111,26 +125,25 @@ public class LevelSelectionLogic : MonoBehaviour {
 			}
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Update () 
 	{
-		//Detecting if LevelObject sprite contains touch position and if so, load it if unlocked;
-
-		if(Input.GetMouseButton(0))
+		if (Input.GetMouseButton(0))
 		{
 			touchPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			touchTime += Time.deltaTime;
 		}
 
-		if(Input.GetMouseButtonUp(0))
+		if(Input.GetMouseButtonDown(0))
 		{
 			for (int i = 0; i < levelList.Count; i++)
 			{
-				if(!levelList[i].isFinished && levelList[i].unlocked && levelList[i].LevelObject.bounds.Contains(touchPos) && touchTime < reactTime)
+				if(!levelList[i].isFinished && levelList[i].unlocked && levelList[i].LevelObject.bounds.Contains(touchPos))
 				{
 					Application.LoadLevel(levelList[i].LevelIndex);
-					PlayerPrefsX.SetVector3("currentCamPos", cam.transform.position);
+					YandexGame.savesData.currentCamPos = cam.transform.position;
+					YandexGame.SaveProgress();
 				}
 			}
 			touchTime = 0;
@@ -142,7 +155,9 @@ public class LevelSelectionLogic : MonoBehaviour {
 				if (!subLevelList[i].isFinished && subLevelList[i].unlocked && subLevelList[i].LevelObject.bounds.Contains(touchPos) && touchTime < reactTime)
 				{
 					Application.LoadLevel(subLevelList[i].LevelIndex);
-					PlayerPrefsX.SetVector3("currentCamPos", cam.transform.position);
+					YandexGame.savesData.currentCamPos = cam.transform.position;
+					YandexGame.SaveProgress();
+
 				}
 			}
 			touchTime = 0;

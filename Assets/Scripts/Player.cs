@@ -4,19 +4,19 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using Mirror;
 using UnityEngine.SceneManagement;
+using YG;
 
 // Token: 0x02000020 RID: 32
-public class Player : NetworkBehaviour
+public class Player : MonoBehaviour
 {
-	
+
 	public int rating;
-	public NetworkConnectionToClient connection;
 	public CameraFollow camFollow;
 	public bool cameraSpawn = false;
 	public GameObject cameraPrefab;
 	public GameObject[] canvasUIs;
+	public GameObject[] upgradeButton;
 
 	public SpriteRenderer eyeDeath;
 	public SpriteRenderer mounthDeath;
@@ -37,11 +37,15 @@ public class Player : NetworkBehaviour
 	public Text levelText;
 	public Text healthText;
 	public Image healthSlider;
+	public Image expSlider;
+	public Text expText;
 	[Header("Статы")]
 	public int strength = 10;
 	public int agility = 10;
 	public int intelligence = 10;
 	public int level = 1;
+	public int exp = 0;
+	public int expNeedToNextLevel = 0;
 	public int baseHealth = 5;
 	public int armor;
 	public int damage;
@@ -52,24 +56,39 @@ public class Player : NetworkBehaviour
 	public float currentHealth;
 	public TurnBasedSystem turn;
 	public int maxActionPoints = 10;
+	public int freePointStats = 0;
 	public int actionPoints;
+	public int attackAction;
+	public int defenceAction;
+	public int useAction;
 	public bool inBattle;
 	public bool finish;
 	private bool attack;
 	private GameObject camera;
 	private Queue<ActionWithPriority> actionQueue = new Queue<ActionWithPriority>();
+	private List<ActionWithPriority> sortedActions = new List<ActionWithPriority>();
 
 	public void Awake()
 	{
+		if (YandexGame.savesData.strength > 0 && YandexGame.savesData.agility > 0 && YandexGame.savesData.intelligence > 0)
+		{
+			level = YandexGame.savesData.level;
+			exp = YandexGame.savesData.exp;
+			freePointStats = YandexGame.savesData.freePointStats;
+			strength = YandexGame.savesData.strength;
+			agility = YandexGame.savesData.agility;
+			intelligence = YandexGame.savesData.intelligence;
+		}
+
+		expNeedToNextLevel = level * 100;
+		foreach (GameObject obj in canvasUIs)
+		{
+			obj.SetActive(false);
+		}
 		if (cameraSpawn) camera = Instantiate(cameraPrefab, transform.position.normalized, Quaternion.identity);
 		else camera = GameObject.FindGameObjectWithTag("MainCamera");
 		camera.SetActive(true);
 		camFollow = camera.GetComponent<CameraFollow>();
-
-		foreach (var canvasUI in canvasUIs)
-		{
-			canvasUI.gameObject.SetActive(true);
-		}
 		maxHealth = (float)(baseHealth * strength);
 		currentHealth = maxHealth;
 		turn = GetComponent<TurnBasedSystem>();
@@ -77,7 +96,7 @@ public class Player : NetworkBehaviour
 		turn.playerTurn = true;
 		actionPoints = maxActionPoints;
 	}
-	
+
 	public class ActionWithPriority
 	{
 		public int Priority { get; private set; }
@@ -100,12 +119,15 @@ public class Player : NetworkBehaviour
 				if (nearestEnemy != null)
 				{
 					attack = true;
-					var sortedActions = actionQueue.OrderBy(a => a.Priority).ToList();
+					sortedActions = actionQueue.OrderBy(a => a.Priority).ToList();
+					HasAttackAction(sortedActions);
 					actionQueue.Clear();
 					foreach (ActionWithPriority actionWithPriority in sortedActions)
 					{
 						yield return StartCoroutine(actionWithPriority.Actions);
+						if (nearestEnemy.currentHealth < 1) break;
 					}
+					sortedActions.Clear();
 					yield return new WaitForSeconds(0.5f);
 					attack = false;
 					yield return new WaitForSeconds(2f);
@@ -129,27 +151,50 @@ public class Player : NetworkBehaviour
 		//if (!isLocalPlayer) yield break;
 
 		{
-			if (inBattle && turn.playerTurn && actionPoints >= 2)
+			if (inBattle && turn.playerTurn && actionPoints >= attackAction)
 			{
-				actionPoints -= 2;
+				actionPoints -= attackAction;
 				ap.UpdateActionPoints(actionPoints);
-				actionQueue.Enqueue(new ActionWithPriority(10, Attack(enemy)));
+				actionQueue.Enqueue(new ActionWithPriority(5, Attack(enemy)));
 				yield return new WaitForSeconds(1f);
 			}
 			yield break;
 		}
 	}
-
+	public void UpStats(string stat)
+	{
+		if (stat == "сила") strength++;
+		if (stat == "ловкость") agility++;
+		if (stat == "интелект") intelligence++;
+		freePointStats--;
+		equipmentManager.GetTotalStats();
+		equipmentManager.CountStats();
+	}
 	private IEnumerator ExecuteDefence()
 	{
 		//if (!isLocalPlayer) yield break;
 
 		{
-			if (inBattle && turn.playerTurn && actionPoints >= 1)
+			if (inBattle && turn.playerTurn && actionPoints >= defenceAction)
 			{
-				actionPoints--;
+				actionPoints -= defenceAction;
 				ap.UpdateActionPoints(actionPoints);
-				actionQueue.Enqueue(new ActionWithPriority(1, Defence()));
+				actionQueue.Enqueue(new ActionWithPriority(2, Defence()));
+				yield return new WaitForSeconds(1f);
+			}
+			yield break;
+		}
+	}
+	private IEnumerator ExecuteUse()
+	{
+		//if (!isLocalPlayer) yield break;
+
+		{
+			if (inBattle && turn.playerTurn && actionPoints >= useAction)
+			{
+				actionPoints -= useAction;
+				ap.UpdateActionPoints(actionPoints);
+				actionQueue.Enqueue(new ActionWithPriority(1, Use()));
 				yield return new WaitForSeconds(1f);
 			}
 			yield break;
@@ -189,12 +234,25 @@ public class Player : NetworkBehaviour
 	private IEnumerator Defence()
 	{
 		//if (!isLocalPlayer) yield break;
-
 		{
 			armored += equipmentManager.currentArmor;
-			yield return new WaitForSeconds(1f);
 			yield break;
 		}
+	}
+	private IEnumerator Use()
+	{
+		if (equipmentManager.equipmentSlots[ItemTypes.Health].childCount > 0)
+		{
+			anim.SetTrigger("Use");
+			yield return new WaitForSeconds(1f);
+			if (currentHealth < maxHealth)
+			{
+				currentHealth += equipmentManager.currentHealth;
+				GameObject.FindGameObjectWithTag("upgradeItem").GetComponent<ItemUpgrade>().UseDurability(equipmentManager.equipmentSlots[ItemTypes.Health].GetChild(0).GetComponent<Items>(), 1);
+				if (currentHealth > maxHealth) currentHealth = maxHealth;
+			}
+		}
+		yield break;
 	}
 	public void TakeDamage(int damageEnemy)
 	{
@@ -239,6 +297,18 @@ public class Player : NetworkBehaviour
 	{
 		//if (!isLocalPlayer) return;
 		{
+			anim.SetBool("isRun", false);
+
+			gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+			gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
+			gameObject.GetComponent<CharacterMovement>().joystick.Horizontal = 0;
+			gameObject.GetComponent<CharacterMovement>().joystick.transform.GetChild(0).localPosition = new Vector3(0, 0);
+			gameObject.GetComponent<CharacterMovement>().joystick.gameObject.SetActive(false);
+			foreach (GameObject obj in canvasUIs)
+			{
+				obj.SetActive(true);
+			}
 			if (camFollow != null) camFollow.StartFollowing();
 			actionPoints = maxActionPoints;
 			ap.UpdateActionPoints(actionPoints);
@@ -253,14 +323,24 @@ public class Player : NetworkBehaviour
 			}
 		}
 	}
+
+	public void CheatConsole(int command)
+	{
+		if (command == 0) exp += 100;
+		if (command == 1) GetComponent<Inventory>().money += 100;
+		if (command == 2) currentHealth = maxHealth;
+	}
 	public void EndBattle()
 	{
 		//if (!isLocalPlayer) return;
 		{
+			foreach (GameObject obj in canvasUIs)
+			{
+				obj.SetActive(false);
+			}
 			if (camFollow != null) camFollow.StopFollowing();
 			attack = false;
 			actionQueue.Clear();
-			turn.playerTurn = true;
 			canMove = true;
 			inBattle = false;
 			apUI.SetActive(false);
@@ -268,8 +348,8 @@ public class Player : NetworkBehaviour
 			for (int i = 0; i < array.Length; i++)
 			{
 				array[i].SetActive(false);
-
 			}
+			exp += nearestEnemy.expForWin;
 		}
 	}
 	private void MoveToTarget()
@@ -326,41 +406,80 @@ public class Player : NetworkBehaviour
 
 	public void _Use()
 	{
+		{
+			StartCoroutine(ExecuteUse());
+		}
 	}
 
 	private void Update()
 	{
-		//if (!isLocalPlayer) return;
-		{
-			if (SceneManager.GetActiveScene().buildIndex == 1) isHub = true;
-			else isHub = false;
-			if (SceneManager.GetActiveScene().buildIndex == 0) canMove = false;
-			else canMove = true;
+		maxHealth = baseHealth * strength;
+		if (!inBattle) turn.playerTurn = true;
 
-			maxHealth = (float)(baseHealth * strength);
-			if (armored > 0)
+		if (freePointStats > 0)
+		{
+			foreach (GameObject button in upgradeButton)
 			{
-				armorText.text = armored.ToString();
-			}
-			else
-			{
-				armorText.text = "0";
-			}
-			float fillAmount = currentHealth / maxHealth;
-			healthSlider.fillAmount = fillAmount;
-			healthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
-			levelText.text = level.ToString();
-			MoveFight();
-			if (actionPoints == 0 && turn.playerTurn)
-			{
-				finish = true;
-				StartCoroutine(ProcessActionQueue());
+				button.SetActive(true);
 			}
 		}
+		else
+		{
+			foreach (GameObject button in upgradeButton)
+			{
+				button.SetActive(false);
+			}
+		}
+		float expAmount = (float)exp / expNeedToNextLevel;
+		expSlider.fillAmount = expAmount;
+		expText.text = exp + "/" + expNeedToNextLevel;
+
+		if (exp >= expNeedToNextLevel)
+		{
+			level += 1;
+			expNeedToNextLevel = (int)(level*100*1.5f);
+			freePointStats += 5;
+		}
+		if (SceneManager.GetActiveScene().buildIndex == 0) isHub = true;
+		else isHub = false;
+		if (SceneManager.GetActiveScene().buildIndex == 1) canMove = false;
+		else if (!inBattle) canMove = true;
+
+		if (armored > 0)
+		{
+			armorText.text = armored.ToString();
+		}
+		else
+		{
+			armorText.text = "0";
+		}
+		float fillAmount = currentHealth / maxHealth;
+		healthSlider.fillAmount = fillAmount;
+		healthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
+		levelText.text = level.ToString();
+		MoveFight();
+		if (actionPoints == 0 && turn.playerTurn)
+		{
+			finish = true;
+			StartCoroutine(ProcessActionQueue());
+		}
+	}
+	private bool HasAttackAction(List<ActionWithPriority> queue)
+	{
+		foreach (var action in queue)
+		{
+			// Проверяем, является ли действие атакой
+			// Это условие зависит от вашей реализации
+			if (action.Priority == 5) // или какой-либо другой способ идентификации
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	private void MoveFight()
 	{
-		if (inBattle && attack && nearestEnemy != null)
+		if (inBattle && attack && HasAttackAction(sortedActions) && nearestEnemy != null)
 		{
 			if (Vector3.Distance(this.gameObject.transform.position, nearestEnemy.transform.position) >= attackRange)
 			{

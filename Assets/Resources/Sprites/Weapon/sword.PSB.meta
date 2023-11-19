@@ -95,12 +95,12 @@ ScriptedImporter:
   rigSpriteImportData:
   - name: SlaveSword [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5000011, y: 0.21851154}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 517
+      x: 515
       y: 596
       width: 58
       height: 172
@@ -117,8 +117,8 @@ ScriptedImporter:
     spritePosition: {x: 20, y: 26}
   - name: ShortIronKatana [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.32708564, y: 0.24383065}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -139,8 +139,8 @@ ScriptedImporter:
     spritePosition: {x: 26, y: 3}
   - name: ShadowSword
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5339056, y: 0.21180934}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -161,8 +161,8 @@ ScriptedImporter:
     spritePosition: {x: 22, y: 4}
   - name: SamuraiSword3 [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5922211, y: 0.22799966}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -183,8 +183,8 @@ ScriptedImporter:
     spritePosition: {x: 2, y: 0}
   - name: SamuraiSword2
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5922211, y: 0.23447593}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -205,8 +205,8 @@ ScriptedImporter:
     spritePosition: {x: 2, y: 0}
   - name: SamuraiElderSword
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.457305, y: 0.246479}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -227,8 +227,8 @@ ScriptedImporter:
     spritePosition: {x: 8, y: 4}
   - name: RustySword
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.47165367, y: 0.24018061}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -249,8 +249,8 @@ ScriptedImporter:
     spritePosition: {x: 18, y: 16}
   - name: Morgana
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.47838593, y: 0.23084071}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -271,8 +271,8 @@ ScriptedImporter:
     spritePosition: {x: 9, y: 12}
   - name: MercenarySword2 [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5000002, y: 0.17442878}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -293,8 +293,8 @@ ScriptedImporter:
     spritePosition: {x: 8, y: 25}
   - name: ManticoreSword
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5000005, y: 0.15751232}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -315,8 +315,8 @@ ScriptedImporter:
     spritePosition: {x: 17, y: 21}
   - name: Machete [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.20187272, y: 0.20220286}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -337,8 +337,8 @@ ScriptedImporter:
     spritePosition: {x: 35, y: 24}
   - name: KnightSword [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.52435434, y: 0.19534127}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -359,8 +359,8 @@ ScriptedImporter:
     spritePosition: {x: 13, y: 16}
   - name: InquisitorSword4 [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.48217377, y: 0.19651747}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -381,8 +381,8 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 15}
   - name: InquisitorSword3 [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.48217377, y: 0.1682865}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -403,8 +403,8 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 15}
   - name: InquisitorSword2 [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.49999997, y: 0.2131373}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -425,8 +425,8 @@ ScriptedImporter:
     spritePosition: {x: 3, y: 15}
   - name: InquisitorSword1 [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5000002, y: 0.19963227}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -447,8 +447,8 @@ ScriptedImporter:
     spritePosition: {x: 3, y: 15}
   - name: GuardSword1 [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.47838593, y: 0.18103175}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -469,8 +469,8 @@ ScriptedImporter:
     spritePosition: {x: 10, y: 20}
   - name: FireWarriorSword1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.4459648, y: 0.19739965}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -491,8 +491,8 @@ ScriptedImporter:
     spritePosition: {x: 17, y: 9}
   - name: FamilySword
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5000009, y: 0.25043258}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -513,8 +513,8 @@ ScriptedImporter:
     spritePosition: {x: 14, y: 16}
   - name: DarkSword
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5000006, y: 0.19332148}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -535,8 +535,8 @@ ScriptedImporter:
     spritePosition: {x: 22, y: 4}
   - name: Bilbo
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5240165, y: 0.18703236}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -557,8 +557,8 @@ ScriptedImporter:
     spritePosition: {x: 14, y: 10}
   - name: TrainingSword [Paint]
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5000009, y: 0.2236933}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -579,8 +579,8 @@ ScriptedImporter:
     spritePosition: {x: 14, y: 16}
   - name: SunriseSword
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.52435434, y: 0.21289684}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -601,8 +601,8 @@ ScriptedImporter:
     spritePosition: {x: 12, y: 4}
   - name: Stoccata
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0.2282776}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -623,8 +623,8 @@ ScriptedImporter:
     spritePosition: {x: 17, y: 9}
   - name: Smallsword
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.4729824, y: 0.21870357}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2

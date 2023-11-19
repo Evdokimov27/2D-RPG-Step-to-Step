@@ -25,9 +25,6 @@ public class SceneLoader : MonoBehaviour
     }
     private void Update()
 	{
-        if (Input.GetKeyDown(KeyCode.Q)) // Пример: удаление предмета из инвентаря по нажатию клавиши R
-        {
-            SwitchToNewScene();
-        }
+       
     }
 }

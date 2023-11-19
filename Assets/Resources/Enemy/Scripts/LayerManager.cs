@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 namespace Assets.FantasyMonsters.Scripts
 {
     /// <summary>
-    /// Used to order sprite layers (monster parts).
+    /// Used to order SpriteRenderer layers (monster parts).
     /// </summary>
     public class LayerManager : MonoBehaviour
     {
@@ -67,7 +67,7 @@ namespace Assets.FantasyMonsters.Scripts
         }
 
         /// <summary>
-        /// Read ordered sprite list by Sorting Order.
+        /// Read ordered SpriteRenderer list by Sorting Order.
         /// </summary>
         public void ReadCurrentOrderBySortingOrder()
         {
@@ -76,7 +76,7 @@ namespace Assets.FantasyMonsters.Scripts
         }
 
         /// <summary>
-        /// Read ordered sprite list by Z coordinate.
+        /// Read ordered SpriteRenderer list by Z coordinate.
         /// </summary>
         public void ReadCurrentOrderByZCoordinate()
         {

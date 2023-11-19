@@ -1,0 +1,609 @@
+{
+    "idSave": 47,
+    "isFirstSession": false,
+    "language": "ru",
+    "promptDone": false,
+    "level": 15,
+    "exp": 1950,
+    "gold": 307,
+    "freePointStats": 0,
+    "strength": 38,
+    "agility": 33,
+    "intelligence": 14,
+    "itemsEquip": [
+        {
+            "itemType": 2,
+            "weaponType": 0,
+            "sharpening": {
+                "chanceModifier": 1.0
+            },
+            "icon": {
+                "instanceID": 27344
+            },
+            "rare": 4,
+            "levelUpgrade": 1,
+            "itemLevel": 16,
+            "itemName": "Серебряная Парча",
+            "itemValue": 24,
+            "durability": 39,
+            "baseStats": {
+                "damage": 0,
+                "armor": 21
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 0
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        },
+        {
+            "itemType": 1,
+            "weaponType": 0,
+            "sharpening": {
+                "chanceModifier": 1.0
+            },
+            "icon": {
+                "instanceID": 27164
+            },
+            "rare": 0,
+            "levelUpgrade": 1,
+            "itemLevel": 14,
+            "itemName": "Золотой Фетр",
+            "itemValue": 21,
+            "durability": 52,
+            "baseStats": {
+                "damage": 0,
+                "armor": 9
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 0
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        },
+        {
+            "itemType": 0,
+            "weaponType": 3,
+            "sharpening": {
+                "chanceModifier": 1.0
+            },
+            "icon": {
+                "instanceID": 27062
+            },
+            "rare": 1,
+            "levelUpgrade": 1,
+            "itemLevel": 16,
+            "itemName": "Проклятый Меч",
+            "itemValue": 24,
+            "durability": 1,
+            "baseStats": {
+                "damage": 54,
+                "armor": 0
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 0
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        },
+        {
+            "itemType": 6,
+            "weaponType": 2,
+            "sharpening": {
+                "chanceModifier": 1.0
+            },
+            "icon": {
+                "instanceID": 27610
+            },
+            "rare": 0,
+            "levelUpgrade": 1,
+            "itemLevel": 16,
+            "itemName": "Эликсированный Лечебник",
+            "itemValue": 24,
+            "durability": 3,
+            "baseStats": {
+                "damage": 0,
+                "armor": 0
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 11
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        }
+    ],
+    "itemsInvent": [
+        {
+            "itemType": 2,
+            "weaponType": 0,
+            "sharpening": {
+                "chanceModifier": 0.0
+            },
+            "icon": {
+                "instanceID": 27292
+            },
+            "rare": 0,
+            "levelUpgrade": 1,
+            "itemLevel": 2,
+            "itemName": "Чешуйчатая Тога",
+            "itemValue": 3,
+            "durability": 32,
+            "baseStats": {
+                "damage": 0,
+                "armor": 5
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 0
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        },
+        {
+            "itemType": 1,
+            "weaponType": 0,
+            "sharpening": {
+                "chanceModifier": 0.0
+            },
+            "icon": {
+                "instanceID": 27012
+            },
+            "rare": 0,
+            "levelUpgrade": 1,
+            "itemLevel": 3,
+            "itemName": "Серебряный Кепка",
+            "itemValue": 4,
+            "durability": 67,
+            "baseStats": {
+                "damage": 0,
+                "armor": 2
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 0
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        },
+        {
+            "itemType": 0,
+            "weaponType": 3,
+            "sharpening": {
+                "chanceModifier": 0.0
+            },
+            "icon": {
+                "instanceID": 27048
+            },
+            "rare": 0,
+            "levelUpgrade": 1,
+            "itemLevel": 3,
+            "itemName": "Ржавый Меч",
+            "itemValue": 4,
+            "durability": 67,
+            "baseStats": {
+                "damage": 5,
+                "armor": 0
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 0
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        },
+        {
+            "itemType": 6,
+            "weaponType": 1,
+            "sharpening": {
+                "chanceModifier": 1.0
+            },
+            "icon": {
+                "instanceID": 27604
+            },
+            "rare": 0,
+            "levelUpgrade": 1,
+            "itemLevel": 1,
+            "itemName": "Жизнестойкий Снадобье",
+            "itemValue": 1,
+            "durability": 3,
+            "baseStats": {
+                "damage": 0,
+                "armor": 0
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 1
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        },
+        {
+            "itemType": 4,
+            "weaponType": 1,
+            "sharpening": {
+                "chanceModifier": 1.0
+            },
+            "icon": {
+                "instanceID": 27586
+            },
+            "rare": 0,
+            "levelUpgrade": 1,
+            "itemLevel": 15,
+            "itemName": "Ужасный Камень заточки",
+            "itemValue": 22,
+            "durability": 34,
+            "baseStats": {
+                "damage": 0,
+                "armor": 0
+            },
+            "statBonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "statHealth": {
+                "health": 0
+            },
+            "skillRequirements": {
+                "requiredLevel": 3
+            }
+        }
+    ],
+    "levelList": [
+        {
+            "nameLevel": "Main 0",
+            "isFinished": true
+        },
+        {
+            "nameLevel": "Main 1",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 2",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 3",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 4",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 5",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 6",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 7",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 8",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 9",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 10",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 11",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 12",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 13",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 14",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 15",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 16",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 17",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 18",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 19",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 20",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 21",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 22",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 23",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 24",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 25",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 26",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 27",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 28",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 29",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 30",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Main 31",
+            "isFinished": false
+        }
+    ],
+    "subLevelList": [
+        {
+            "nameLevel": "Sub 0",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 1",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 2",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 3",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 4",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 5",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 6",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 7",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 8",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 9",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 10",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 11",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 12",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 13",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 14",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 15",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 16",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 17",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 18",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 19",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 20",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 21",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 22",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 23",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 24",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 25",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 26",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 27",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 28",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 29",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 30",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 31",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 32",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 33",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 34",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 35",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 36",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 37",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 38",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 39",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 40",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 41",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 42",
+            "isFinished": false
+        },
+        {
+            "nameLevel": "Sub 43",
+            "isFinished": false
+        }
+    ],
+    "currentCamPos": {
+        "x": -182.0,
+        "y": 169.0,
+        "z": -5.0
+    }
+}

@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Mirror;
-public class TurnBasedSystem : NetworkBehaviour
+
+public class TurnBasedSystem : MonoBehaviour
 {
    
     public List<GameObject> players; // Список игроков

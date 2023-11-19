@@ -3,8 +3,9 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.EventSystems;
-using Mirror;
-public class InventoryUI : NetworkBehaviour
+using System.Collections;
+
+public class InventoryUI : MonoBehaviour
 {
     [Header("Инициализация")]
     public GameObject player; // Ссылка на компонент Inventory
@@ -17,7 +18,9 @@ public class InventoryUI : NetworkBehaviour
     public Text moneyText; // Список предметов в инвентаре
     [Header("Статы")]
     public Text statsNameText; // Список предметов в инвентаре
+    public Text battleNameText; // Список предметов в инвентаре
     public Text statsValueText; // Список предметов в инвентаре
+    public Text battleValueText; // Список предметов в инвентаре
     [Header("Информационная панель")]
     public GameObject itemInfoPanel; // Панель с информацией о предмете
     public Text itemNameText; // Текст с именем предмета
@@ -27,6 +30,8 @@ public class InventoryUI : NetworkBehaviour
     public Text priceText; // Изображение предмета
     public Button equipButton; // Кнопка "Надеть"
     public Button dropButton; // Кнопка "Выбросить"
+    public NPC_Shop npcShop; // Кнопка "Выбросить"
+    public NPC_Upgrade npcUpgrade; // Кнопка "Выбросить"
 
 
     public List<Button> itemButtons = new List<Button>();
@@ -34,6 +39,7 @@ public class InventoryUI : NetworkBehaviour
     private int previousItemCount = 0;
     public void Start()
     {
+
         player = GameObject.FindGameObjectWithTag("Player");
         equipmentManager = player.GetComponent<EquipmentManager>();
         inventory = player.GetComponent<Inventory>();
@@ -42,11 +48,12 @@ public class InventoryUI : NetworkBehaviour
 
     public void DownClick(GameObject obj)
     {
-        if (obj.GetComponent<Button>().interactable) obj.transform.localScale = new Vector3(0.4f, 0.4f);
+        if (obj.GetComponent<Button>().interactable) obj.transform.localScale = new Vector3(0.8f, 0.8f);
+
     }
     public void UpClick(GameObject obj)
     {
-        if (obj.GetComponent<Button>().interactable) obj.transform.localScale = new Vector3(0.5f, 0.5f);
+        if (obj.GetComponent<Button>().interactable) obj.transform.localScale = new Vector3(1f, 1f);
     }
     // Создание кнопок для каждого предмета в инвентаре
 
@@ -76,7 +83,6 @@ public class InventoryUI : NetworkBehaviour
                     buttonGO.transform.Find("Icon").GetComponent<Image>().type = Image.Type.Simple;
                     buttonGO.transform.Find("Icon").GetComponent<Image>().preserveAspect = true;
                     buttonGO.transform.Find("Icon").GetComponent<Image>().transform.localScale = new Vector3(0.75f, 0.75f);
-
                 }
                 else if (item.itemType == ItemTypes.Armor) buttonGO.transform.Find("Icon").GetComponent<Image>().transform.localScale = new Vector3(2, 2);
                 else if (item.itemType == ItemTypes.Helmet)
@@ -91,8 +97,31 @@ public class InventoryUI : NetworkBehaviour
 
                 itemButtons.Add(button);
             }
+
+            if (player.GetComponent<Player>().isHub)
+            {
+
+                while (npcShop == null)
+                {
+                    npcShop = GameObject.FindGameObjectWithTag("npc_shop").GetComponent<NPC_Shop>();
+                    break;
+                }
+                npcShop.PopulateInventoryUI();
+                while (npcUpgrade == null)
+                {
+                    npcUpgrade = GameObject.FindGameObjectWithTag("npc_upgrade").GetComponent<NPC_Upgrade>();
+                    break;
+                }
+                npcUpgrade.PopulateInventoryUI();
+
+            }
+
+
         }
     }
+    
+
+    
     public void SelectItem(Items item)
     {
         //if (!isLocalPlayer) return;
@@ -103,20 +132,22 @@ public class InventoryUI : NetworkBehaviour
             switch (item.itemType)
             {
                 case ItemTypes.Weapon:
-                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nТип оружия: {item.weaponType}\nУрон: {item.baseStats.damage}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nЦена: {item.itemValue}";
+                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nТип оружия: {item.weaponType}\nУрон: {item.baseStats.damage}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nПрочность: {item.durability}";
                     break;
-
                 case ItemTypes.Helmet:
-                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЗащита: {item.baseStats.armor}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nЦена: {item.itemValue}";
+                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЗащита: {item.baseStats.armor}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nПрочность: {item.durability}";
                     break;
                 case ItemTypes.Armor:
-                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЗащита: {item.baseStats.armor}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nЦена: {item.itemValue}";
+                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЗащита: {item.baseStats.armor}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nПрочность: {item.durability}";
                     break;
                 case ItemTypes.Accessory:
-                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nДополнительные хар-ки:\nСила: +{item.statBonuses.strength}\nЛовкость: +{item.statBonuses.agility}\nИнтеллект: +{item.statBonuses.intelligence}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nЦена: {item.itemValue}";
+                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nДополнительные хар-ки:\nСила: +{item.statBonuses.strength}\nЛовкость: +{item.statBonuses.agility}\nПрочность: {item.durability}\nИнтеллект: +{item.statBonuses.intelligence}\nТребуемый уровень: {item.skillRequirements.requiredLevel}";
                     break;
                 case ItemTypes.Sharpening:
-                    itemInfoText.text = $"Редкость: {item.rare}\nМножитель шанса улучшения: {item.sharpening}";
+                    itemInfoText.text = $"Редкость: {item.rare}\nОсталось использований: {item.durability}\nМножитель шанса улучшения: {item.sharpening.chanceModifier}";
+                    break;
+                case ItemTypes.Health:
+                    itemInfoText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЛечение:{item.healthStat.health}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nОсталось использований: {item.durability}";
                     break;
             }
             equipText.text = "Надеть";
@@ -128,9 +159,15 @@ public class InventoryUI : NetworkBehaviour
                 itemIconImage.GetComponent<Image>().transform.localScale = new Vector3(0.75f, 0.75f);
             }
             else if (item.itemType == ItemTypes.Armor) itemIconImage.GetComponent<Image>().transform.localScale = new Vector3(2, 2);
+    		else if (item.itemType == ItemTypes.Sharpening) itemIconImage.GetComponent<Image>().transform.localScale = new Vector3(2.5f, 2.5f);
             else if (item.itemType == ItemTypes.Helmet)
             {
                 itemIconImage.GetComponent<Image>().transform.localScale = new Vector3(0.75f, 0.75f);
+                itemIconImage.GetComponent<Image>().preserveAspect = true;
+            }
+            else if (item.itemType == ItemTypes.Health)
+            {
+                itemIconImage.GetComponent<Image>().transform.localScale = new Vector3(0.4f, 0.4f);
                 itemIconImage.GetComponent<Image>().preserveAspect = true;
             }
             itemIconImage.sprite = item.icon;
@@ -189,14 +226,17 @@ public class InventoryUI : NetworkBehaviour
     {
         //if (!isLocalPlayer) return;
         {
-            statsNameText.text = "\nСила:\nЛовкость:\nИнтелект:\nБроня:\nУрон:";
-            statsValueText.text = $"\n{equipmentManager.currentStrength}\n{equipmentManager.currentAgility}\n{equipmentManager.currentIntelligence}\n{equipmentManager.currentArmor}\n{equipmentManager.currentDamage}";
+            statsNameText.text = "\nСила:\nЛовкость:\nИнтелект:\nДоступно очков улучшения:";
+            battleNameText.text = "\nБроня:\nУрон:";
+            battleValueText.text = $"\n{equipmentManager.currentArmor}\n{equipmentManager.currentDamage}";
+            statsValueText.text = $"\n{equipmentManager.currentStrength}\n{equipmentManager.currentAgility}\n{equipmentManager.currentIntelligence}\n\n{player.GetComponent<Player>().freePointStats}";
             moneyText.text = inventory.money.ToString();
             int itemCountInInventory = playerInventory.childCount;
             int itemCountInButtons = itemButtonParent.childCount;
-            if (itemCountInInventory != itemCountInButtons)
-            {
-                PopulateInventoryUI(); // Обновляем интерфейс, если изменилось количество предметов
+            if(previousItemCount != itemCountInInventory)
+			{
+                previousItemCount = itemCountInInventory;
+                PopulateInventoryUI();
             }
         }
     }

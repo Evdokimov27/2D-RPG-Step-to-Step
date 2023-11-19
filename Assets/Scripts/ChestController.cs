@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.Events;
-using Mirror;
-public class ChestController : NetworkBehaviour
+
+public class ChestController : MonoBehaviour
 {
     public List<Items> items;
     public int maxSlot;
@@ -15,8 +15,10 @@ public class ChestController : NetworkBehaviour
     public Transform playerInventory;
     public GameObject player;
     public GameObject itemInfoPanel;
+    public Image icon;
     public Text itemNameText;
     public Text itemStatsText;
+    public Text price;
     public Button confirmButton;
     public ItemUpgrade upgradeItem;
     public GameObject openChest;
@@ -30,10 +32,9 @@ public class ChestController : NetworkBehaviour
     public UnityEvent itemClickedEvent = new UnityEvent();
     public UnityEvent confirmButtonClickedEvent = new UnityEvent();
 
-	public override void OnStartLocalPlayer()
+	public void Start()
 	{
         openChest = GameObject.FindGameObjectWithTag("buttonOpen");
-        openChest.transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, 0.2f);
         full = false;
     }
     private void NewItemChest()
@@ -78,7 +79,6 @@ public class ChestController : NetworkBehaviour
     {
         GameObject itemUI = Instantiate(slotPrefab, itemGrid);
         itemUI.transform.Find("Icon").GetComponent<Image>().sprite = item.icon;
-        itemUI.transform.Find("Icon").GetComponent<Image>().transform.localPosition = new Vector3(50, 50);
         if (item.itemType == ItemTypes.Weapon)
         {
             itemUI.transform.Find("Icon").GetComponent<Image>().type = Image.Type.Simple;
@@ -107,7 +107,6 @@ public class ChestController : NetworkBehaviour
             player = collider.gameObject;
             openChest.GetComponent<Button>().onClick.RemoveAllListeners();
             openChest.GetComponent<Button>().onClick.AddListener(() => Open());
-            openChest.transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, 1f);
             openChest.GetComponent<Button>().interactable = true;
 
         }
@@ -116,7 +115,6 @@ public class ChestController : NetworkBehaviour
     {
         if (collider == player.GetComponent<Collider2D>())
         {
-            openChest.transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, 0.2f);
             openChest.GetComponent<Button>().interactable = false;
 
         }
@@ -127,11 +125,13 @@ public class ChestController : NetworkBehaviour
         if (!isOpened)
         {
             canvasChest.SetActive(true);
+            player.GetComponent<Player>().canMove = false;
             isOpened = true;
             itemInfoPanel.SetActive(false);
         }
         else
         {
+            player.GetComponent<Player>().canMove = true;
             canvasChest.SetActive(false);
             isOpened = false;
         }
@@ -140,23 +140,34 @@ public class ChestController : NetworkBehaviour
     private void ItemClicked(Items item, GameObject itemButton)
     {
         selectedItem = item;
+        icon.sprite = item.icon;
+        icon.SetNativeSize();
+        if (item.itemType == ItemTypes.Helmet) icon.gameObject.transform.localScale = new Vector3(0.5f, 0.5f);
+        if (item.itemType == ItemTypes.Weapon) icon.gameObject.transform.localScale = new Vector3(0.75f, 0.75f);
+        if (item.itemType == ItemTypes.Armor) icon.gameObject.transform.localScale = new Vector3(1.5f, 1.5f);
+        if (item.itemType == ItemTypes.Accessory) icon.gameObject.transform.localScale = new Vector3(0.75f, 0.75f);
+
+        price.text = "Цена:" + item.itemValue.ToString();
         itemNameText.text = item.itemName;
         switch (item.itemType)
         {
             case ItemTypes.Weapon:
-                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nТип оружия: {item.weaponType}\nУрон: {item.baseStats.damage}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nЦена: {item.itemValue}";
+                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nТип оружия: {item.weaponType}\nУрон: {item.baseStats.damage}\nТребуемый уровень: {item.skillRequirements.requiredLevel}";
                 break;
             case ItemTypes.Helmet:
-                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЗащита: {item.baseStats.armor}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nЦена: {item.itemValue}";
+                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЗащита: {item.baseStats.armor}\nТребуемый уровень: {item.skillRequirements.requiredLevel}";
                 break;
             case ItemTypes.Armor:
-                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЗащита: {item.baseStats.armor}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nЦена: {item.itemValue}";
+                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЗащита: {item.baseStats.armor}\nТребуемый уровень: {item.skillRequirements.requiredLevel}";
                 break;
             case ItemTypes.Accessory:
-                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nДополнительные хар-ки:\nСила: +{item.statBonuses.strength}\nЛовкость: +{item.statBonuses.agility}\nИнтеллект: +{item.statBonuses.intelligence}\nТребуемый уровень: {item.skillRequirements.requiredLevel}\nЦена: {item.itemValue}";
+                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nДополнительные хар-ки:\nСила: +{item.statBonuses.strength}\nЛовкость: +{item.statBonuses.agility}\nИнтеллект: +{item.statBonuses.intelligence}\nТребуемый уровень: {item.skillRequirements.requiredLevel}";
                 break;
             case ItemTypes.Sharpening:
                 itemStatsText.text = $"Редкость: {item.rare}\nМножитель шанса улучшения: {item.sharpening.chanceModifier}";
+                break;
+            case ItemTypes.Health:
+                itemStatsText.text = $"Уровень предмета: {item.itemLevel}\nРедкость: {item.rare}\nЛечение:{item.healthStat.health}\nТребуемый уровень: {item.skillRequirements.requiredLevel}";
                 break;
             case ItemTypes.Money:
                 player.GetComponent<Inventory>().money += item.money.count;
@@ -164,7 +175,8 @@ public class ChestController : NetworkBehaviour
                 Destroy(item);
                 break;
         }
-        itemInfoPanel.SetActive(true);
+        if(item.itemType != ItemTypes.Money)itemInfoPanel.SetActive(true);
+        else itemInfoPanel.SetActive(false);
         confirmButton.onClick.RemoveAllListeners();
         confirmButton.onClick.AddListener(() => ConfirmButtonClicked(selectedItem, itemButton));
 

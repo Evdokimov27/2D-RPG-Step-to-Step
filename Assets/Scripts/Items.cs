@@ -3,6 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 // Перечисление для типов предметов
+[Serializable]
 public enum ItemTypes
 {
     Weapon,
@@ -11,8 +12,10 @@ public enum ItemTypes
     Accessory,
     Sharpening,
     Money,
+    Health,
     Item
 }
+[Serializable]
 public enum ItemRares
 {
     Обычная,
@@ -22,6 +25,7 @@ public enum ItemRares
     Легендарная,
     Creative
 }
+[Serializable]
 public enum WeaponTypes
 {
     Разрубающий,
@@ -30,7 +34,7 @@ public enum WeaponTypes
     Режущий
 }
 
-// Скрипт предмета
+[Serializable]
 public class Items : MonoBehaviour
 {
     public ItemTypes itemType;
@@ -48,10 +52,12 @@ public class Items : MonoBehaviour
     public string itemName; // Название предмета
     public int itemValue; // Цена предмета
     public int durability; // Прочность предмета
+    public HealthStat healthStat; // Базовые характеристики предмета
     public BaseStats baseStats; // Базовые характеристики предмета
     public Bonuses statBonuses; // Бонусы к характеристикам предмета
     public SkillRequirements skillRequirements; // Требования к навыкам
     [Header("Icon")]
+    public SharpeningIcon sharpeningIcon;
     public AxeIcon axe;
     public SwordIcon sword;
     public DaggerIcon dagger;
@@ -59,18 +65,7 @@ public class Items : MonoBehaviour
     public HelmetIcon helmet;
     public RingIcon ring;
     public ArmorIcon armor;
-
-    private void Start()
-    {
-        UseItem();
-    }
-
-    // Метод для использования предмета
-    public void UseItem()
-    {
-        // Реализуйте здесь логику использования предмета, например, примените бонусы к персонажу
-    }
-
+    public PotionIcon potion;
 }
 
 // Класс для базовых характеристик предмета
@@ -82,15 +77,32 @@ public class BaseStats
     public int armor; // Броня для брони
 }
 [System.Serializable]
+public class HealthStat
+{
+    [Header("HealthItem")]
+    public int health; // Урон для оружия
+}
+[System.Serializable]
 public class Money
 {
     public Sprite icon; // Урон для оружия
     public int count; // Урон для оружия
 }
 [System.Serializable]
+
 public class Sharpening
 {
     public float chanceModifier;
+}
+[System.Serializable]
+public class SharpeningIcon
+{
+    [Header("Sharpening")]
+    public Sprite sharpeningIconCommon;
+    public Sprite sharpeningIconUncommon;
+    public Sprite sharpeningIconRare;
+    public Sprite sharpeningIconEpic;
+    public Sprite sharpeningIconLegendary;
 }
 [System.Serializable]
 public class AxeIcon
@@ -161,6 +173,16 @@ public class RingIcon
     public Sprite[] ringIconRare;
     public Sprite[] ringIconEpic;
     public Sprite[] ringIconLegendary;
+}
+[System.Serializable]
+public class PotionIcon
+{
+    [Header("Ring")]
+    public Sprite[] potionIconCommon;
+    public Sprite[] potionIconUncommon;
+    public Sprite[] potionIconRare;
+    public Sprite[] potionIconEpic;
+    public Sprite[] potionIconLegendary;
 }
 // Класс для бонусов к характеристикам предмета
 [System.Serializable]

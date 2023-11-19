@@ -12,6 +12,7 @@ namespace Assets.FantasyMonsters.Scripts
     public class Monster : MonoBehaviour
     {
         public SpriteRenderer Head;
+        public int expForWin;
         public List<Sprite> HeadSprites;
         public Animator Animator;
         public bool Variations;
@@ -33,7 +34,6 @@ namespace Assets.FantasyMonsters.Scripts
                 }
             }
 
-            GetComponent<LayerManager>().SetSortingGroupOrder((int) -transform.localPosition.y);
 
             var stateHandler = Animator.GetBehaviours<StateHandler>().SingleOrDefault(i => i.Name == "Death");
 

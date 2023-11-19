@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BackgroundControl_0 : MonoBehaviour
 {
+    public GameObject backGroundColor;
     [Header("BackgroundNum 0 -> 3")]
     public int backgroundNum;
     public Sprite[] Layer_Sprites;
@@ -15,13 +16,16 @@ public class BackgroundControl_0 : MonoBehaviour
             Layer_Object[i] = GameObject.Find("Layer_" + i);
         }
         
-        ChangeSprite();
     }
 
     void Update() {
+        ChangeSprite();
+
         //for presentation without UIs
-        if (Input.GetKeyDown(KeyCode.RightArrow)) NextBG();
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) BackBG();
+        if (backgroundNum == 0) backGroundColor.GetComponent<SpriteRenderer>().color = new Color(0.6666666f, 0.5843138f, 0.482353f);
+        if (backgroundNum == 1) backGroundColor.GetComponent<SpriteRenderer>().color = new Color(0.5921569f, 0.4196079f, 0.4196079f);
+        if (backgroundNum == 2) backGroundColor.GetComponent<SpriteRenderer>().color = new Color(0.3882353f, 0.3333333f, 0.3960785f);
+        if (backgroundNum == 3) backGroundColor.GetComponent<SpriteRenderer>().color = new Color(0.4941177f, 0.4352942f, 0.5372549f);
     }
 
     void ChangeSprite(){
